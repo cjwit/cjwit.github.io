@@ -1,4 +1,5 @@
-// TODO: add more project, create a "see more" button that adds to the list or category buttons across the top
+// TODO: format buttons for development section on mobile, picture size on mobile
+
 var d3 = [
 	{
 		name: 'Meteorite Landings Worldwide',
@@ -124,9 +125,9 @@ var renderContent = function(category) {
 	var content = ''
 	var category = eval(category)
 	category.forEach(function(item) {
-		html = "<div class='row dev-content'><div class='col-xs-3'><img src='";
+		html = "<div class='row dev-content'><div class='col-sm-3'><img src='";
 		html += item.img;
-		html += "' class='img-rounded img-responsive'></div><div class='col-xs-9'><h4 class='text-uppercase'>";
+		html += "' class='img-rounded img-responsive'></div><div class='col-sm-9'><h4 class='text-uppercase'>";
 		html += item.name;
 		html += "</h4><p>";
 		html += item.description;
