@@ -1,9 +1,9 @@
 body {
   font-weight: 200; }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 450px) {
     body {
       padding-top: 50px; } }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 450px) {
     body {
       padding-top: 0px; } }
 
@@ -91,7 +91,7 @@ h4 {
 
 .dev-content {
   padding: 40px 0px 40px 0px; }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 450px) {
     .dev-content {
       position: relative;
       display: flex;
@@ -108,7 +108,7 @@ h4 {
 .dev-content:last-child:after {
   border-bottom: none; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .dev-img {
     width: 100%; } }
 
