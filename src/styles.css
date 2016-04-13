@@ -130,7 +130,7 @@ h4 {
 
 .image-background {
   color: white; }
-  @media scrren and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .image-background {
       background-attachment: fixed; } }
   @media screen and (max-width: 768px) {
