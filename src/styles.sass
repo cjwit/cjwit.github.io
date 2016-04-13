@@ -1,3 +1,4 @@
+$xsmall: 400px
 $small: 768px
 $medium: 992px
 $large: 1200px
@@ -10,7 +11,10 @@ $gray-lighter: #eee
 
 body
   font-weight: 200
-  padding-top: 50px
+  @media screen and (min-width: $xsmall)
+    padding-top: 50px
+  @media screen and (max-width: $xsmall)
+    padding-top: 0px
 
 .container-fluid
   @media screen and (min-width: $small) and (max-width: $medium)
@@ -96,7 +100,7 @@ h4
 
 .dev-content
   padding: 40px 0px 40px 0px
-  @media screen and (min-width: $small)
+  @media screen and (min-width: $xsmall)
     position: relative
     display: flex
     align-items: center
@@ -113,7 +117,7 @@ h4
   border-bottom: none
 
 .dev-img
-  @media screen and (max-width: $small)
+  @media screen and (max-width: $xsmall)
     width: 100%
 
 #music
