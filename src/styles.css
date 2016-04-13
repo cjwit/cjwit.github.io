@@ -1,0 +1,122 @@
+body {
+  font-weight: 200;
+  padding-top: 50px; }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container-fluid {
+    padding-left: 100px;
+    padding-right: 100px; } }
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+@media screen and (min-width: 992px) {
+  .thumbnails {
+    padding-left: 100px;
+    padding-right: 100px; } }
+
+h2 {
+  padding-bottom: 30px;
+  font-weight: 100; }
+
+.selector {
+  height: auto;
+  display: block;
+  margin: 0px; }
+  .selector li {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #777;
+    background: #eee; }
+
+@media screen and (max-width: 768px) {
+  .title {
+    padding-bottom: 0; } }
+
+.subtitle {
+  color: #777; }
+
+@media screen and (max-width: 768px) {
+  .header-img {
+    padding: 20px 0px 20px 0px; } }
+
+h3 {
+  font-weight: 100;
+  padding-bottom: 0px; }
+  @media screen and (max-width: 992px) {
+    h3 {
+      text-align: center; } }
+
+h4 {
+  color: #777;
+  font-weight: 100; }
+
+.img-right, .img-left {
+  width: 600px; }
+
+@media screen and (max-width: 768px) {
+  .img-right {
+    padding-top: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .img-left {
+    padding-bottom: 30px; } }
+
+.spaced {
+  padding-bottom: 130px;
+  padding-top: 100px; }
+
+.thumbnail {
+  border: none;
+  padding: 30px; }
+
+@media screen and (min-width: 768px) {
+  #links-list {
+    padding-left: 10%;
+    padding-right: 10%; } }
+@media screen and (max-width: 768px) {
+  #links-list {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
+@media screen and (max-width: 992px) {
+  .hide-mobile {
+    display: none; } }
+
+.dev-content {
+  padding: 40px 0px 40px 0px;
+  position: relative;
+  display: flex;
+  align-items: center; }
+
+.dev-content:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  left: 40%;
+  bottom: 0;
+  border-bottom: 1px solid #eee; }
+
+.dev-content:last-child:after {
+  border-bottom: none; }
+
+#music {
+  background-image: url("../images/violin-cover-dark.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+#links {
+  background-image: url("../images/pattern1-dark.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+#contact {
+  background-image: url("../images/meknes-dark.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+.image-background {
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */

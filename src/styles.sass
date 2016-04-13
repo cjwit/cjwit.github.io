@@ -1,0 +1,130 @@
+$small: 768px
+$medium: 992px
+$large: 1200px
+
+$gray-darker:  #222
+$gray-dark:  #333
+$gray: #555
+$gray-light: #777
+$gray-lighter: #eee
+
+body
+  font-weight: 200
+  padding-top: 50px
+
+.container-fluid
+  @media screen and (min-width: $small) and (max-width: $medium)
+    padding-left: 100px
+    padding-right: 100px
+
+  @media screen and (max-width: $small)
+    padding-left: 10px
+    padding-right: 10px
+
+.thumbnails
+  @media screen and (min-width: $medium)
+    padding-left: 100px
+    padding-right: 100px
+
+h2
+  padding-bottom: 30px
+  font-weight: 100
+
+.selector
+  height: auto
+  display: block
+  margin: 0px
+
+  li
+    display: inline-block
+    padding: 10px 20px 10px 20px
+    border: 1px solid $gray-light
+    background: $gray-lighter
+
+.title
+  @media screen and (max-width: $small)
+    padding-bottom: 0
+
+.subtitle
+  color: $gray-light
+
+.header-img
+  @media screen and (max-width: $small)
+    padding: 20px 0px 20px 0px
+
+h3
+  font-weight: 100
+  padding-bottom: 0px
+  @media screen and (max-width: $medium)
+    text-align: center
+
+h4
+  color: $gray-light
+  font-weight: 100
+
+.img-right, .img-left
+  width: 600px
+
+.img-right
+  @media screen and (max-width: $small)
+    padding-top: 30px
+
+.img-left
+  @media screen and (max-width: $small)
+    padding-bottom: 30px
+
+.spaced
+  padding-bottom: 130px
+  padding-top: 100px
+
+.thumbnail
+  border: none
+  padding: 30px
+
+#links-list
+  @media screen and (min-width: $small)
+    padding-left: 10%
+    padding-right: 10%
+
+  @media screen and (max-width: $small)
+    padding-left: 20px
+    padding-right: 20px
+
+.hide-mobile
+  @media screen and (max-width: $medium)
+    display: none
+
+.dev-content
+  padding: 40px 0px 40px 0px
+  position: relative
+  display: flex
+  align-items: center
+
+.dev-content:after
+  content: ''
+  position: absolute
+  width: 40%
+  left: 40%
+  bottom: 0
+  border-bottom: 1px solid $gray-lighter
+
+.dev-content:last-child:after
+  border-bottom: none
+
+#music
+  background-image: url('../images/violin-cover-dark.jpg')
+  background-size: cover
+  background-attachment: fixed
+
+#links
+  background-image: url('../images/pattern1-dark.jpg')
+  background-size: cover
+  background-attachment: fixed
+
+#contact
+  background-image: url('../images/meknes-dark.jpg')
+  background-size: cover
+  background-attachment: fixed
+
+.image-background
+  color: white
