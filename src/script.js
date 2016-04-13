@@ -1,4 +1,4 @@
-// TODO: format buttons for development section on mobile, picture size on mobile
+// TODO: format buttons for development section on mobile
 
 var d3 = [
 	{
@@ -54,6 +54,12 @@ var react = [
 ]
 
 var websites = [
+	{
+		name: 'Teaching portfolio',
+		img: 'images/portfolio.png',
+		description: "Dynamically presents multimedia teaching portfolio content using jQuery, Bootstrap, and Colorbox.",
+		link: 'http://cjwit.github.io/jw'
+	},
 	{
 		name: 'Portfolio and Home Page',
 		img: 'images/pattern2-small.jpg',
@@ -121,6 +127,9 @@ var fullstack = [
 		link: 'http://vast-island-20454.herokuapp.com'
 	}
 ]
+
+var buttons = ['Test Drive', 'Check It', 'Boom', 'Go There', 'Take a Look', 'Do It Up', 'Try It Out'];
+
 var renderContent = function(category) {
 	var content = ''
 	var category = eval(category)
@@ -133,7 +142,9 @@ var renderContent = function(category) {
 		html += item.description;
 		html += "</p><p><a href='";
 		html += item.link;
-		html += "' class='btn btn-default' target='_blank' role='button'>Test Drive</a></p></div></div>"
+		html += "' class='btn btn-default' target='_blank' role='button'>"
+		html += buttons[Math.floor(Math.random() * buttons.length)]
+		html += "</a></p></div></div>"
 		content += html
 	})
 	return content;
