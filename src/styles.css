@@ -103,29 +103,27 @@ h4 {
 
 #music {
   background-image: url("../images/violin-cover-dark.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
-  @media screen and (max-width: 768px) {
-    #music {
-      background-attachment: scroll; } }
+  background-size: cover; }
 
 #links {
   background-image: url("../images/pattern1-dark.jpg");
-  background-size: cover;
-  background-attachment: fixed; }
-  @media screen and (max-width: 768px) {
-    #links {
-      background-attachment: scroll; } }
+  background-size: cover; }
 
 #contact {
   background-image: url("../images/meknes-dark.jpg");
   background-size: cover;
-  background-attachment: fixed; }
-  @media screen and (max-width: 768px) {
-    #contact {
-      background-attachment: scroll; } }
+  padding-left: 20px;
+  padding-right: 20px; }
+  #contact a {
+    color: #8bb2d1; }
 
 .image-background {
   color: white; }
+  @media scrren and (min-width: 768px) {
+    .image-background {
+      background-attachment: fixed; } }
+  @media screen and (max-width: 768px) {
+    .image-background {
+      background-attachment: scroll; } }
 
 /*# sourceMappingURL=styles.css.map */
