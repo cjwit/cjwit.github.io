@@ -85,10 +85,12 @@ h4 {
     display: none; } }
 
 .dev-content {
-  padding: 40px 0px 40px 0px;
-  position: relative;
-  display: flex;
-  align-items: center; }
+  padding: 40px 0px 40px 0px; }
+  @media screen and (min-width: 768px) {
+    .dev-content {
+      position: relative;
+      display: flex;
+      align-items: center; } }
 
 .dev-content:after {
   content: "";
@@ -100,6 +102,10 @@ h4 {
 
 .dev-content:last-child:after {
   border-bottom: none; }
+
+@media screen and (max-width: 768px) {
+  .dev-img {
+    width: 100%; } }
 
 #music {
   background-image: url("../images/violin-cover-dark.jpg");

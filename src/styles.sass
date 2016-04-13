@@ -96,9 +96,10 @@ h4
 
 .dev-content
   padding: 40px 0px 40px 0px
-  position: relative
-  display: flex
-  align-items: center
+  @media screen and (min-width: $small)
+    position: relative
+    display: flex
+    align-items: center
 
 .dev-content:after
   content: ''
@@ -110,6 +111,10 @@ h4
 
 .dev-content:last-child:after
   border-bottom: none
+
+.dev-img
+  @media screen and (max-width: $small)
+    width: 100%
 
 #music
   background-image: url('../images/violin-cover-dark.jpg')

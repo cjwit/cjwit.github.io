@@ -125,9 +125,9 @@ var renderContent = function(category) {
 	var content = ''
 	var category = eval(category)
 	category.forEach(function(item) {
-		html = "<div class='row dev-content'><div class='col-sm-3'><img src='";
+		html = "<div class='row dev-content'><div class='col-sm-3 col-sm-offset-1'><img src='";
 		html += item.img;
-		html += "' class='img-rounded img-responsive'></div><div class='col-sm-9'><h4 class='text-uppercase'>";
+		html += "' class='img-rounded img-responsive dev-img'></div><div class='col-sm-7'><h4 class='text-uppercase'>";
 		html += item.name;
 		html += "</h4><p>";
 		html += item.description;
