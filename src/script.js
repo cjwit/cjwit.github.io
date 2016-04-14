@@ -49,7 +49,7 @@ var react = [
 		name: 'Markdown Previewer',
 		img: 'images/markdown.png',
 		description: "A simple online text editor that displays a preview of Github's Markdown format.",
-		github: 'https://github.com/cjwit/markdown/',
+		github: 'https://github.com/cjwit/markdown/tree/gh-pages',
 		link: 'http://cjwit.github.io/markdown/'
 	},
 	{
@@ -65,6 +65,7 @@ var websites = [
 		name: 'Teaching portfolio',
 		img: 'images/portfolio.png',
 		description: "Dynamically presents multimedia teaching portfolio content using jQuery, Bootstrap, and Colorbox.",
+		github: "https://github.com/cjwit/markdown/tree/gh-pages",
 		link: 'http://cjwit.github.io/jw'
 	},
 	{
@@ -130,7 +131,7 @@ var fullstack = [
 		name: 'Society for Arab Music Research',
 		img: 'images/samr.png',
 		description: "Flask-based web application running through a Postgres database that allows researchers to log in and share bios, events, and projects. Uses Oauth2 (Facebook and Google APIs), deployed on Heroku. Currently under development.",
-		github: "https://github.com/cjwit/samr",
+		github: "https://github.com/cjwit/samr/",
 		link: 'http://vast-island-20454.herokuapp.com'
 	}
 ]
