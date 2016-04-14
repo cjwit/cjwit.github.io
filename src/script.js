@@ -5,25 +5,29 @@ var d3 = [
 		name: 'Meteorite Landings Worldwide',
 		img: 'images/meteors.png',
 		description: "A D3.js built global map displaying data for individual meteorite landings.",
-		link: 'http://myweb.fsu.edu/cwitulski/meteors/'
+		github: "https://github.com/cjwit/meteors/tree/gh-pages",
+		link: 'http://cjwit.github.io/meteors'
 	},
 	{
 		name: 'Camper News Postings on FreeCodeCamp.com',
 		img: 'images/posts.png',
 		description: "A force-directed interactive chart built in D3.js.",
-		link: 'http://myweb.fsu.edu/cwitulski/force/'
+		github: "https://github.com/cjwit/campernews/tree/gh-pages",
+		link: 'http://cjwit.github.io/campernews'
 	},
 	{
 		name: 'Global Temperatures since the 1750s',
 		img: 'images/temp.png',
 		description: "A heatmap type chart of global tempertures built in D3.js.",
-		link: 'http://myweb.fsu.edu/cwitulski/temp/'
+		github: "https://github.com/cjwit/globaltemp/tree/gh-pages",
+		link: 'http://cjwit.github.io/globaltemp'
 	},
 	{
 		name: 'Doping Allegations in Cycling',
 		img: 'images/doping.png',
 		description: "An interactive scatterplot showing allegations of doping among top cyclists built in D3.js.",
-		link: 'http://myweb.fsu.edu/cwitulski/doping/'
+		github: "https://github.com/cjwit/doping/tree/gh-pages",
+		link: 'http://cjwit.github.io/doping'
 	},
 	{
 		name: 'Gross Domestic Product',
@@ -37,13 +41,15 @@ var react = [
 		name: 'Dungeon Fungeon',
 		img: 'images/dungeon.png',
 		description: "A dungeon-type game built in React.js.",
-		link: 'http://myweb.fsu.edu/cwitulski/fungeon/'
+		github: "https://github.com/cjwit/fungeon/tree/gh-pages",
+		link: 'http://cjwit.github.io/fungeon'
 	},
 	{
 		name: 'Game of Life',
 		img: 'images/life.png',
 		description: "React.js-based simulation that mirrors the functionality of Conway's Game of Life.",
-		link: 'http://myweb.fsu.edu/cwitulski/life/'
+		github: "https://github.com/cjwit/life/tree/gh-pages",
+		link: 'http://cjwit.github.io/life'
 	},
 	{
 		name: 'Markdown Previewer',
@@ -56,7 +62,8 @@ var react = [
 		name: 'Recipe Box',
 		img: 'images/recipes.png',
 		description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
-		link: 'http://myweb.fsu.edu/cwitulski/recipes/'
+		github: "https://github.com/cjwit/recipes/tree/gh-pages",
+		link: 'http://cjwit.github.io/recipes'
 	}
 ]
 
@@ -86,43 +93,50 @@ var javascript = [
 		name: 'What?',
 		img: 'images/what.png',
 		description: "Javascript-based game that uses sounds and timers to clone the popular Simon©.",
-		link: 'http://myweb.fsu.edu/cwitulski/what/'
+		github: "https://github.com/cjwit/what/tree/gh-pages",
+		link: 'http://cjwit.github.io/what'
 	},
 	{
 		name: 'Tic Tac Toe',
 		img: 'images/ttt.png',
 		description: "Web-based tic tac toe game devleoped in Javascript.",
-		link: 'http://myweb.fsu.edu/cwitulski/ttt/'
+		github: "https://github.com/cjwit/ttt/tree/gh-pages",
+		link: 'http://cjwit.github.io/ttt'
 	},
 	{
 		name: 'Current Weather',
 		img: 'images/weather.png',
 		description: "Weather application that uses geographic coordinates from the browser to find the current weather and near-term forecast for your local area.",
-		link: 'http://myweb.fsu.edu/cwitulski/weather/'
+		github: "https://github.com/cjwit/weather/tree/gh-pages",
+		link: 'http://cjwit.github.io/weather'
 	},
 	{
 		name: 'Break Time',
 		img: 'images/break.png',
 		description: "Javascript-based pamadoro timer application.",
-		link: 'http://myweb.fsu.edu/cwitulski/timer/'
+		github: "https://github.com/cjwit/break/tree/gh-pages",
+		link: 'http://cjwit.github.io/break'
 	},
 	{
 		name: 'Calculamatator',
 		img: 'images/calc.png',
 		description: "Javascript-based online calculator application.",
-		link: 'http://myweb.fsu.edu/cwitulski/calculator/'
+		github: "https://github.com/cjwit/calc/tree/gh-pages",
+		link: 'http://cjwit.github.io/calc'
 	},
 	{
 		name: 'Wikipedia Lookup',
 		img: 'images/wiki.png',
 		description: "Small app that uses jQuery and API calls to Wikipedia to generate and format links for articles based on a search request.",
-		link: 'http://myweb.fsu.edu/cwitulski/wiki/'
+		github: "https://github.com/cjwit/wiki/tree/gh-pages",
+		link: 'http://cjwit.github.io/wiki'
 	},
 	{
 		name: 'Random Quote Generator',
 		img: 'images/quotes.png',
 		description: "API-driven application generates a new quote and allows for sharing via Twitter",
-		link: 'http://myweb.fsu.edu/cwitulski/quotes/'
+		github: "https://github.com/cjwit/quotes/tree/gh-pages",
+		link: 'http://cjwit.github.io/quotes'
 	}
 ]
 
