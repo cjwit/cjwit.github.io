@@ -70,6 +70,7 @@ var websites = [
 	{
 		name: 'Portfolio and Home Page',
 		description: "Uses Bootstrap and SASS to display portfolio content and other information on the author's research, musical activities, and current web development projects.",
+		github: "https://github.com/cjwit/cjwit.github.io",
 		link: '#musicology'
 	},
 	{
