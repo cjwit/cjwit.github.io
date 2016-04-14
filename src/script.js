@@ -46,6 +46,12 @@ var react = [
 		link: 'http://myweb.fsu.edu/cwitulski/life/'
 	},
 	{
+		name: 'Markdown Previewer',
+		img: 'images/markdown.png',
+		description: "A simple online text editor that displays a preview of Github's Markdown format.",
+		link: 'http://cjwit.github.io/markdown/'
+	},
+	{
 		name: 'Recipe Box',
 		img: 'images/recipes.png',
 		description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
@@ -62,13 +68,11 @@ var websites = [
 	},
 	{
 		name: 'Portfolio and Home Page',
-		img: 'images/pattern2-small.jpg',
 		description: "Uses Bootstrap and SASS to display portfolio content and other information on the author's research, musical activities, and current web development projects.",
 		link: '#musicology'
 	},
 	{
 		name: 'World Music resources',
-		img: 'images/wmtext.png',
 		description: "Website for online materials linked to the World Music: Traditions and Transformations textbook. Uses vanilla JavaScript alongside jQuery and Colorbox to create a dynamic student experience within a static website. Currently under development.",
 		link: 'http://myweb.fsu.edu/cwitulski/textbook/'
 	}
@@ -135,7 +139,7 @@ var renderContent = function(category) {
 	var category = eval(category)
 	category.forEach(function(item) {
 		html = "<div class='row dev-content'><div class='col-sm-3 col-sm-offset-1'><img src='";
-		html += item.img;
+		html += (item.img ? item.img : 'images/default.jpg');
 		html += "' class='img-rounded img-responsive dev-img'></div><div class='col-sm-7'><h4 class='text-uppercase'>";
 		html += item.name;
 		html += "</h4><p>";
