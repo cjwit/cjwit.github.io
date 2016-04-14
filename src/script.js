@@ -33,7 +33,8 @@ var d3 = [
 		name: 'Gross Domestic Product',
 		img: 'images/gdp.png',
 		description: "An interactive chart of US GDP growth built in D3.js.",
-		link: 'http://myweb.fsu.edu/cwitulski/gdp/'
+		github: "https://github.com/cjwit/gdp/tree/gh-pages",
+		link: 'http://cjwit.github.io/gdp'
 	}
 ]
 var react = [
