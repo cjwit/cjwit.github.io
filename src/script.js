@@ -58,15 +58,18 @@ var react = [
 		description: "A simple online text editor that displays a preview of Github's Markdown format.",
 		github: 'https://github.com/cjwit/markdown/tree/gh-pages',
 		link: 'http://cjwit.github.io/markdown/'
-	},
-	{
-		name: 'Recipe Box',
-		img: 'images/recipes.png',
-		description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
-		github: "https://github.com/cjwit/recipes/tree/gh-pages",
-		link: 'http://cjwit.github.io/recipes'
 	}
 ]
+
+/*
+{
+	name: 'Recipe Box',
+	img: 'images/recipes.png',
+	description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
+	github: "https://github.com/cjwit/recipes/tree/gh-pages",
+	link: 'http://cjwit.github.io/recipes'
+}
+*/
 
 var websites = [
 	{
@@ -81,13 +84,18 @@ var websites = [
 		description: "Uses Bootstrap and SASS to display portfolio content and other information on the author's research, musical activities, and current web development projects.",
 		github: "https://github.com/cjwit/cjwit.github.io",
 		link: '#musicology'
-	},
-	{
-		name: 'World Music resources',
-		description: "Website for online materials linked to the World Music: Traditions and Transformations textbook. Uses vanilla JavaScript alongside jQuery and Colorbox to create a dynamic student experience within a static website. Currently under development.",
-		link: 'http://myweb.fsu.edu/cwitulski/textbook/'
 	}
 ]
+
+/*
+
+{
+	name: 'World Music resources',
+	description: "Website for online materials linked to the World Music: Traditions and Transformations textbook. Uses vanilla JavaScript alongside jQuery and Colorbox to create a dynamic student experience within a static website. Currently under development.",
+	link: 'http://myweb.fsu.edu/cwitulski/textbook/'
+}
+
+*/
 
 var javascript = [
 	{
@@ -119,35 +127,40 @@ var javascript = [
 		link: 'http://cjwit.github.io/break'
 	},
 	{
-		name: 'Calculamatator',
-		img: 'images/calc.png',
-		description: "Javascript-based online calculator application.",
-		github: "https://github.com/cjwit/calc/tree/gh-pages",
-		link: 'http://cjwit.github.io/calc'
-	},
-	{
 		name: 'Wikipedia Lookup',
 		img: 'images/wiki.png',
 		description: "Small app that uses jQuery and API calls to Wikipedia to generate and format links for articles based on a search request.",
 		github: "https://github.com/cjwit/wiki/tree/gh-pages",
 		link: 'http://cjwit.github.io/wiki'
-	},
-	{
-		name: 'Random Quote Generator',
-		img: 'images/quotes.png',
-		description: "API-driven application generates a new quote and allows for sharing via Twitter",
-		github: "https://github.com/cjwit/quotes/tree/gh-pages",
-		link: 'http://cjwit.github.io/quotes'
 	}
 ]
 
+/*
+
+{
+	name: 'Random Quote Generator',
+	img: 'images/quotes.png',
+	description: "API-driven application generates a new quote and allows for sharing via Twitter",
+	github: "https://github.com/cjwit/quotes/tree/gh-pages",
+	link: 'http://cjwit.github.io/quotes'
+},
+{
+	name: 'Calculamatator',
+	img: 'images/calc.png',
+	description: "Javascript-based online calculator application.",
+	github: "https://github.com/cjwit/calc/tree/gh-pages",
+	link: 'http://cjwit.github.io/calc'
+}
+
+*/
+
 var fullstack = [
 	{
-		name: 'Society for Arab Music Research',
+		name: 'Arab Music researchers',
 		img: 'images/samr.png',
-		description: "Flask-based web application running through a Postgres database that allows researchers to log in and share bios, events, and projects. Uses Oauth2 (Facebook and Google APIs), deployed on Heroku. Currently under development.",
-		github: "https://github.com/cjwit/samr/",
-		link: 'http://vast-island-20454.herokuapp.com'
+		description: "React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Oauth2 (Facebook and Google APIs), deployed on Heroku. Currently under development.",
+		github: "https://github.com/cjwit/arabmusic/",
+		link: 'https://whispering-sands-88923.herokuapp.com'
 	}
 ]
 
