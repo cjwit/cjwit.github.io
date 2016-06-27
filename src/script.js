@@ -2,6 +2,13 @@
 
 var d3 = [
 	{
+		name: 'Melodic Contours in Malhun',
+		img: 'images/malhun.png',
+		description: "An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. Used in conjunction with a presentation at the 2016 Analytical Approaches to World Music conference in New York City. Repository also includes various Python scripts for musicological analysis.",
+		github: "https://github.com/cjwit/music21",
+		link: 'http://cjwit.github.io/music21'
+	},
+	{
 		name: 'Meteorite Landings Worldwide',
 		img: 'images/meteors.png',
 		description: "A D3.js built global map displaying data for individual meteorite landings.",
@@ -21,7 +28,9 @@ var d3 = [
 		description: "A heatmap type chart of global tempertures built in D3.js.",
 		github: "https://github.com/cjwit/globaltemp/tree/gh-pages",
 		link: 'http://cjwit.github.io/globaltemp'
-	},
+	}
+
+/*
 	{
 		name: 'Doping Allegations in Cycling',
 		img: 'images/doping.png',
@@ -36,6 +45,8 @@ var d3 = [
 		github: "https://github.com/cjwit/gdp/tree/gh-pages",
 		link: 'http://cjwit.github.io/gdp'
 	}
+*/
+
 ]
 var react = [
 	{
@@ -157,10 +168,17 @@ var javascript = [
 var fullstack = [
 	{
 		name: 'Arab Music researchers',
-		img: 'images/samr.png',
-		description: "React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Oauth2 (Facebook and Google APIs), deployed on Heroku. Currently under development.",
+		img: 'images/amr.png',
+		description: "React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Facebook and Google authorization, deployed on Heroku. Currently under development.",
 		github: "https://github.com/cjwit/arabmusic/",
 		link: 'https://whispering-sands-88923.herokuapp.com'
+	},
+	{
+		name: 'Online Course Documentation',
+		img: 'images/docs.png',
+		description: "Documentation for teaching online courses. Using Ajax, the page accesses an editable Markdown file and renders it in HTML and generates a responsive menu from the content headings for easy navigation.",
+		github: "https://github.com/cjwit/onlinedocs/",
+		link: 'https://cjwit.github.io/onlinedocs/'
 	}
 ]
 
