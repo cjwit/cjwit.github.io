@@ -101,6 +101,13 @@ var websites = [
 		link: 'https://cjwit.github.io/onlinedocs/'
 	},
 	{
+		name: 'Responsive E-Commerce Layout',
+		img: 'images/ecommerce.png',
+		description: "Responsive template format for an e-commerce website that uses jQuery and Bootstrap to render content from a mock API call.",
+		github: "https://github.com/cjwit/coffeelayout",
+		link: 'http://cjwit.github.io/coffeelayout'
+	},
+	{
 		name: 'Teaching portfolio',
 		img: 'images/portfolio.png',
 		description: "Dynamically presents multimedia teaching portfolio content using jQuery, Bootstrap, and Colorbox.",
