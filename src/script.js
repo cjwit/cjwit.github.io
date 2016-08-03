@@ -5,7 +5,7 @@ var python = [
 		name: 'ContourViz: Melodic Contours in Malhun',
 		img: 'images/malhun.png',
 		description: "An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. Used in conjunction with a presentation at the 2016 Analytical Approaches to World Music conference in New York City. Read a blog post about the Python package <a href = 'https://music21-mit.blogspot.com/2016/07/contourviz-creating-interactive-contour.html' target = '_blank'>here</a>.",
-		github: "https://github.com/cjwit/music21",
+		github: "https://github.com/cjwit/contourviz",
 		link: 'http://cjwit.github.io/music21'
 	}
 ]
