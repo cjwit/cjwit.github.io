@@ -1,13 +1,16 @@
 // TODO: format buttons for development section on mobile
 
-var d3 = [
+var python = [
 	{
-		name: 'Melodic Contours in Malhun',
+		name: 'ContourViz: Melodic Contours in Malhun',
 		img: 'images/malhun.png',
-		description: "An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. Used in conjunction with a presentation at the 2016 Analytical Approaches to World Music conference in New York City. Repository also includes various Python scripts for musicological analysis.",
+		description: "An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. Used in conjunction with a presentation at the 2016 Analytical Approaches to World Music conference in New York City. Read a blog post about the Python package <a href = 'https://music21-mit.blogspot.com/2016/07/contourviz-creating-interactive-contour.html' target = '_blank'>here</a>.",
 		github: "https://github.com/cjwit/music21",
 		link: 'http://cjwit.github.io/music21'
-	},
+	}
+]
+
+var d3 = [
 	{
 		name: 'Meteorite Landings Worldwide',
 		img: 'images/meteors.png',
@@ -83,6 +86,20 @@ var react = [
 */
 
 var websites = [
+	{
+		name: 'Arab Music Research',
+		img: 'images/amr.png',
+		description: "Full-stack React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Facebook and Google authorization, deployed on Heroku. Currently under development.",
+		github: "https://github.com/cjwit/arabmusic/",
+		link: 'https://whispering-sands-88923.herokuapp.com'
+	},
+	{
+		name: 'Online Course Documentation',
+		img: 'images/docs.png',
+		description: "Documentation for teaching online courses. Using Ajax, the page accesses an editable Markdown file and renders it in HTML and generates a responsive menu from the content headings for easy navigation.",
+		github: "https://github.com/cjwit/onlinedocs/",
+		link: 'https://cjwit.github.io/onlinedocs/'
+	},
 	{
 		name: 'Teaching portfolio',
 		img: 'images/portfolio.png',
@@ -165,23 +182,6 @@ var javascript = [
 
 */
 
-var fullstack = [
-	{
-		name: 'Arab Music researchers',
-		img: 'images/amr.png',
-		description: "React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Facebook and Google authorization, deployed on Heroku. Currently under development.",
-		github: "https://github.com/cjwit/arabmusic/",
-		link: 'https://whispering-sands-88923.herokuapp.com'
-	},
-	{
-		name: 'Online Course Documentation',
-		img: 'images/docs.png',
-		description: "Documentation for teaching online courses. Using Ajax, the page accesses an editable Markdown file and renders it in HTML and generates a responsive menu from the content headings for easy navigation.",
-		github: "https://github.com/cjwit/onlinedocs/",
-		link: 'https://cjwit.github.io/onlinedocs/'
-	}
-]
-
 var buttons = ['Test Drive', 'Check It', 'Boom', 'Go There', 'Take a Look', 'Do It Up', 'Try It Out'];
 
 var renderContent = function(category) {
@@ -214,7 +214,7 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 	});
 
-	$('#dev-container').html(renderContent(fullstack))
+	$('#dev-container').html(renderContent(websites))
 
 	$('.selector').click(function(e) {
 		var category = event.target.id
