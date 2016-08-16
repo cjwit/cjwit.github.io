@@ -12,6 +12,20 @@ var python = [
 
 var d3 = [
 	{
+		name: 'Vote!',
+		img: 'images/vote.png',
+		description: "Voting app built in React/Flux using D3.js to represent user created polls.",
+		github: "https://github.com/cjwit/vote",
+		link: 'https://cjwit-vote.herokuapp.com'
+	},
+	{
+		name: 'ContourViz: Melodic Contours in Malhun',
+		img: 'images/malhun.png',
+		description: "An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. Used in conjunction with a presentation at the 2016 Analytical Approaches to World Music conference in New York City. Read a blog post about the Python package <a href = 'https://music21-mit.blogspot.com/2016/07/contourviz-creating-interactive-contour.html' target = '_blank'>here</a>.",
+		github: "https://github.com/cjwit/contourviz",
+		link: 'http://cjwit.github.io/music21'
+	},
+	{
 		name: 'Meteorite Landings Worldwide',
 		img: 'images/meteors.png',
 		description: "A D3.js built global map displaying data for individual meteorite landings.",
@@ -53,18 +67,25 @@ var d3 = [
 ]
 var react = [
 	{
-		name: 'Dungeon Fungeon',
-		img: 'images/dungeon.png',
-		description: "A dungeon-type game built in React.js.",
-		github: "https://github.com/cjwit/fungeon/tree/gh-pages",
-		link: 'http://cjwit.github.io/fungeon'
+		name: 'Arab Music Research',
+		img: 'images/amr.png',
+		description: "Full-stack React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Facebook and Google authorization, deployed on Heroku. Currently under development.",
+		github: "https://github.com/cjwit/arabmusic/",
+		link: 'https://whispering-sands-88923.herokuapp.com'
 	},
 	{
-		name: 'Game of Life',
-		img: 'images/life.png',
-		description: "React.js-based simulation that mirrors the functionality of Conway's Game of Life.",
-		github: "https://github.com/cjwit/life/tree/gh-pages",
-		link: 'http://cjwit.github.io/life'
+		name: 'Getting Out',
+		img: 'images/out.png',
+		description: "React-Redux single page app that allows logged in users to share their evening's plans. The Node.js/MongoDB backend maintains a dated listing of users who have selected each hotspot, rendering them by username for others.",
+		github: "https://github.com/cjwit/gettingout",
+		link: 'https://cjwit-gettingout.herokuapp.com'
+	},
+	{
+		name: 'Vote!',
+		img: 'images/vote.png',
+		description: "Voting app built in React/Flux using D3.js to represent user created polls.",
+		github: "https://github.com/cjwit/vote",
+		link: 'https://cjwit-vote.herokuapp.com'
 	},
 	{
 		name: 'Markdown Previewer',
@@ -82,17 +103,24 @@ var react = [
 	description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
 	github: "https://github.com/cjwit/recipes/tree/gh-pages",
 	link: 'http://cjwit.github.io/recipes'
-}
+},
+{
+	name: 'Dungeon Fungeon',
+	img: 'images/dungeon.png',
+	description: "A dungeon-type game built in React.js.",
+	github: "https://github.com/cjwit/fungeon/tree/gh-pages",
+	link: 'http://cjwit.github.io/fungeon'
+},
+{
+	name: 'Game of Life',
+	img: 'images/life.png',
+	description: "React.js-based simulation that mirrors the functionality of Conway's Game of Life.",
+	github: "https://github.com/cjwit/life/tree/gh-pages",
+	link: 'http://cjwit.github.io/life'
+},
 */
 
-var websites = [
-	{
-		name: 'Arab Music Research',
-		img: 'images/amr.png',
-		description: "Full-stack React/Express/Node-based web application running through a MongoDB database that allows researchers to log in and share bios, events, and projects. Uses Facebook and Google authorization, deployed on Heroku. Currently under development.",
-		github: "https://github.com/cjwit/arabmusic/",
-		link: 'https://whispering-sands-88923.herokuapp.com'
-	},
+var bootstrap = [
 	{
 		name: 'Online Course Documentation',
 		img: 'images/docs.png',
@@ -141,11 +169,11 @@ var javascript = [
 		link: 'http://cjwit.github.io/what'
 	},
 	{
-		name: 'Tic Tac Toe',
-		img: 'images/ttt.png',
-		description: "Web-based tic tac toe game devleoped in Javascript.",
-		github: "https://github.com/cjwit/ttt/tree/gh-pages",
-		link: 'http://cjwit.github.io/ttt'
+		name: 'Break Time',
+		img: 'images/break.png',
+		description: "Javascript-based pamadoro timer application.",
+		github: "https://github.com/cjwit/break/tree/gh-pages",
+		link: 'http://cjwit.github.io/break'
 	},
 	{
 		name: 'Current Weather',
@@ -155,18 +183,18 @@ var javascript = [
 		link: 'http://cjwit.github.io/weather'
 	},
 	{
-		name: 'Break Time',
-		img: 'images/break.png',
-		description: "Javascript-based pamadoro timer application.",
-		github: "https://github.com/cjwit/break/tree/gh-pages",
-		link: 'http://cjwit.github.io/break'
-	},
-	{
 		name: 'Wikipedia Lookup',
 		img: 'images/wiki.png',
 		description: "Small app that uses jQuery and API calls to Wikipedia to generate and format links for articles based on a search request.",
 		github: "https://github.com/cjwit/wiki/tree/gh-pages",
 		link: 'http://cjwit.github.io/wiki'
+	},
+	{
+		name: 'Tic Tac Toe',
+		img: 'images/ttt.png',
+		description: "Web-based tic tac toe game devleoped in Javascript.",
+		github: "https://github.com/cjwit/ttt/tree/gh-pages",
+		link: 'http://cjwit.github.io/ttt'
 	}
 ]
 
@@ -221,7 +249,7 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 	});
 
-	$('#dev-container').html(renderContent(websites))
+	$('#dev-container').html(renderContent(react))
 
 	$('.selector').click(function(e) {
 		var category = event.target.id
