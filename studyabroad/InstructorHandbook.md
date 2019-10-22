@@ -42,7 +42,7 @@ Check Air Canada's website for details on what you are allowed to bring ([carry 
 
 I highly recommend that you actually weigh all of your bags (just stand on a scale with and without the bag in hand to see the weight) because I've been that person who has to open up a suitcase, move things around, and throw things out because I packed over the limit!
 
-### Other suggestions about luggage:
+### Other suggestions about luggage
 
 * We will be walking a lot and sidewalks in Morocco are rarely friendly nor are they ever flat. My best suggestion is to pack light enough to carry everything, but if you can't do that, sure to have *very* sturdy rolling bags. Heavy duty backpacks are ideal for this kind of travel. Fez is built into a valley between mountains, so every road goes up and down at odd angles and there will be days when it feels more like urban hiking than walking.
 * Consider packing lightly or bringing clothes that you don't care about so you can toss or give them away and make space for anything you want to buy and bring back. It's a good chance to clean out the closet. No one will judge you on your wardrobe, so just be functional!
@@ -76,6 +76,9 @@ For the airplane/carry on:
 * Passport
 * Printed itinerary and contact information on the American Language Center in Fez (see the top of this page) and my phone number
 * Phone, computer, and chargers for each
+* Travel adapter for phone/electronics (Morocco uses the standard for Europe, see below)
+* Voltage converter if you need one (see below)
+* Backup battery charger if you want one
 * Headphones and earplugs
 * A book
 * A pen for any customs paperwork
@@ -100,6 +103,14 @@ Clothes and other things
 Morocco has very good cell service and decent 3G internet. The internet is not what we are used to and often does not work, but it's enough to be worthwhile. Being able to send texts and photos back home from a phone is really convenient and something that I could not do even ten years ago. Google Maps is also starting to be more useful, which can help in a crunch.
 
 Check with your carrier to see if your phone is unlocked. Most iPhones after a certain generation are unlocked by default. If you have a SIM card slot on your phone and it's unlocked, you can easily put in a Moroccan SIM card and use WhatsApp or Facebook Messenger to chat or call internationally for no fee. The phone and internet prepaid cards do cost money, but it's not too much. We can go to a tele-boutique as a group when we arrive to get that set up. If your phone is locked or does not have a SIM card (my old Verizon phones always fell into this category), then you can buy a cheap one there for under $100 and either sell it or give it away as a gift when you leave.
+
+### Travel chargers: converters and adapters
+
+Morocco's voltage is like Europe's: it is 220 instead of 110. This means that you need a converter for some things, but most modern phones can accept the 220 voltage without any trouble. A quick internet search will tell you if yours does. If you are bringing any electronics, take a look at the (very) fine print near the plug to see if you need to convert voltage. If so, get a converter.
+
+A voltage converter is not the same thing as a travel plug! Besides the differnet voltage, the shape of the power outlets in Morocco is different than here. It matches what you see in most of Europe with two rounded prongs instead of our two flat ones. Even if you do not need a voltage converter, you will need a travel adapter to make your power plug fit into the wall sockets.
+
+I've never traveled with a battery backup before, but they are getting cheaper and I may try it this time around. For long days of flying and/or travel, or any evenings where you forget to charge your phone, it may be worth it. That one is up to you!
 
 ## Homestays
 
