@@ -97,6 +97,7 @@ Clothes and other things
 * Good comfortable shoes
 * Hat and gloves
 * A driver's license or other form of ID so that you can leave your passport safely locked up
+* Hard copy of our course readings so you are not dependent on internet access
 
 ## Cell phones
 
