@@ -6,7 +6,7 @@ This page is an overview of useful material as we plan our trip to Morocco. Sinc
 
 Our program is in partnership with the American Language Center (ALC) in Fez, which also holds the Arabic Language Institute in Fez (ALIF). The school teaches English to Moroccan students and Arabic to international students, which is where the potentially confusing pair of names comes in.
 
-If you have any questions or need any help, you can contact me (using a Moroccan number or an American one, both of which I will provide as we get closer to travel) or reach out to ALIF directly.
+If you have any questions or need any help, you can contact me (using a Moroccan number or an American one, both of which I will provide as we get closer to travel) or reach out to ALIF directly. My Moroccan phone number should be 06 24 97 28 34 if you are calling from within Morocco or (212) 624 97 28 34‬‬ if you are calling from the USA. It's possible that this number has expired since I last used the SIM card. If so, I will update everyone with a new number. My email is [cwituls@bgsu.edu](mailto:cwituls@bgsu.edu). My Skype account is *cwitulski*, FaceTime is *chris.witulski@gmail.com*, and depending on the SIM card situation, I also intend to provide a forwarding phone number from the USA.
 
 [ALIF's website](http://www.alif-fes.com) has addresses and contact info, but their phone is (212) 535 62 48 50 from outside Morocco or 05 35 62 48 50 from within. (You replace the 212 country code with a 0 in Moroccan numbers.) Their address is 2 Rue Ahmed Hiba, Fes, Ville Nouvelle 30000 Morocco. Write these numbers down and keep them on you in case you need to show a taxi or your phone battery dies!
 
