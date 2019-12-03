@@ -2,16 +2,46 @@
 
 This page is an overview of useful material as we plan our trip to Morocco. Since we will be based in Fez for the first two weeks and this is where we will have the most independence, the bulk of the information is about that city. Pretty much everything applies for our travels during the third week, as well.
 
+## Tentative itinerary
+
+### Flight information
+
+Outbound:
+
+* AC8920 (flight number), Thursday, January 2nd, DTW (Detroit) to YYZ (Toronto), 14:15-15:27
+* AC420, Thursday, January 2nd, YYZ to YUL (Montreal), 17:00-18:15
+* AC808, Thursday, January 2nd, YUL to CMN (Casablanca), 19:10-08:10
+
+Return:
+
+* AC809, Wednesday, January 22nd, CMN to YUL, 10:10-12:20
+* AC415, Wednesday, January 22nd, YUL to YYZ, 14:00-15:30
+* AC8921, Wednesday, January 22nd, YYZ to DTW, 16:45-17:58 
+
+### In-country travel
+
+* Friday, January 3, 2020: Arrive in Casablanca, orientation at American Language Institute
+* Wednesday, January 15, 2020: Overnight travel to Meknes and Voluboulis
+* Thursday, January 16, 2020: Return to Fez
+* Saturday, January 18, 2020: Travel to Khamlia, desert trip
+* Monday, January 20, 2020: Travel to Marrakech
+* Wednesday, January 22, 2020: Travel to Casablanca, return flights to USA
+
 ## Contact information
 
-Our program is in partnership with the American Language Center (ALC) in Fez, which also holds the Arabic Language Institute in Fez (ALIF). The school teaches English to Moroccan students and Arabic to international students, which is where the potentially confusing pair of names comes in.
+In case of emergency, you will contact InternationalSOS using the numbers on the card that you were given when you registered your travel and/or went to the Education Abroad orientation meeting. **That number is 1-215-942-8478. You call collect.**
 
-If you have any questions or need any help, you can contact me (using a Moroccan number or an American one, both of which I will provide as we get closer to travel) or reach out to ALIF directly. Here are some ways to get in touch while we are abroad: 
+The phone number for Education Abroad at BGSU is 419-372-2247.
 
+If you have any questions or need any help, you can contact me (using a Moroccan number or an American one, both of which I will provide as we get closer to travel) or reach out to our partners in Morocco directly. Here are some ways to get in touch while we are abroad: 
+
+* We will create a WhatsApp group that includes your American and Moroccan phones.
 * My Moroccan phone number should be 06 24 97 28 34 if you are calling from within Morocco or (212) 624 97 28 34‬‬ if you are calling from the USA. It's possible that this number has expired since I last used the SIM card. If so, I will update everyone with a new number. 
 * My email is [cwituls@bgsu.edu](mailto:cwituls@bgsu.edu). 
 * My Skype account is *cwitulski* and FaceTime is *chris.witulski@gmail.com*.
 * Depending on the SIM card situation, I also intend to provide a forwarding phone number from the USA.
+
+Our program is in partnership with the American Language Center (ALC) in Fez, which also holds the Arabic Language Institute in Fez (ALIF). The school teaches English to Moroccan students and Arabic to international students, which is where the potentially confusing pair of names comes in.
 
 [ALIF's website](http://www.alif-fes.com) has addresses and contact info, but I'll include it here, too:
 
@@ -108,6 +138,7 @@ Clothes and other things
 * Hat and gloves
 * A driver's license or other form of ID so that you can leave your passport safely locked up
 * Hard copy of our course readings so you are not dependent on internet access
+* Small gift for homestay family, if you would like
 
 ## Cell phones
 
@@ -127,7 +158,7 @@ I've never traveled with a battery backup before, but they are getting cheaper a
 
 Some people may have the option of staying in the Arabic Language Center residence in the new city (the *ville nouvelle*). Everyone else will be assigned to homestays with families in Fez. We will all be together when we are in the desert and in hotels in Marrakech.
 
-Since we are pretty short term in Fez (we'll only be there for two weeks), I am not sure how they will go about assigning homestay families. You may have some choices. These could be things like: would you prefer to have an English speaker in the family or not? Would you prefer to be in the old walled city (a very different experience) or have the amenities of the new city? Our classes will be near the edge of the old city, so either will work. Taxis from the new city can be irritating to get, but walking from the depths of the old city can be a hike. I'll add more information about what options we have when we find out more.
+Since we are pretty short term in Fez (we'll only be there for two weeks), I am not sure how they will go about assigning homestay families. You may have some choices. These could be things like: would you prefer to have an English speaker in the family or not? Would you prefer to be in the old walled city (a very different experience) or have the amenities of the new city? Our classes will be near the edge of the old city, so either will work. Taxis from the new city can be irritating to get, but walking from the depths of the old city can be a hike. I'll add more information about what options we have when we find out more. I will email the homestay forms as we get closer.
 
 Aside from food (below), homestays should also provide a locked space for your valuables and for things like washing your clothes. I'd avoid drinking the water (see below), but showers and whatnot are fine. New city homes should have regular showers, old city homes may not. In some cases (though increasingly rare), old city homes may have squat toilets, too. But, on the flip side, you might end up with beautiful terrace views of a city unlike any you've ever seen and a very different experience of neighborhood than you can get elsewhere. It's all a trade off.
 
