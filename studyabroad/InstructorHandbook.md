@@ -114,6 +114,7 @@ There is a new mall in Fez that has everything from a supermarket to a Cartier s
 For the airplane/carry on:
 
 * Passport
+* ISOS card
 * Printed itinerary and contact information on the American Language Center in Fez (see the top of this page) and my phone number
 * Phone, computer, and chargers for each
 * Travel adapter for phone/electronics (Morocco uses the standard for Europe, see below)
@@ -135,6 +136,7 @@ Clothes and other things
 
 * Layers, including sweater, long underwear
 * Good comfortable shoes
+* Shower shoes/sandles
 * Hat and gloves
 * A driver's license or other form of ID so that you can leave your passport safely locked up
 * Hard copy of our course readings so you are not dependent on internet access
