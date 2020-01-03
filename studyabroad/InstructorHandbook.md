@@ -36,16 +36,15 @@ The phone number for Education Abroad at BGSU is 419-372-2247.
 If you have any questions or need any help, you can contact me (using a Moroccan number or an American one, both of which I will provide as we get closer to travel) or reach out to our partners in Morocco directly. Here are some ways to get in touch while we are abroad: 
 
 * We will create a WhatsApp group that includes your American and Moroccan phones.
-* My Moroccan phone number should be 06 24 97 28 34 if you are calling from within Morocco or (212) 624 97 28 34‬‬ if you are calling from the USA. It's possible that this number has expired since I last used the SIM card. If so, I will update everyone with a new number. 
+* My Moroccan phone number is 0625254719 if you are calling from within Morocco or (212) 625254719 if you are calling from the USA.
 * My email is [cwituls@bgsu.edu](mailto:cwituls@bgsu.edu). 
 * My Skype account is *cwitulski* and FaceTime is *chris.witulski@gmail.com*.
-* Depending on the SIM card situation, I also intend to provide a forwarding phone number from the USA.
 
 Our program is in partnership with the American Language Center (ALC) in Fez, which also holds the Arabic Language Institute in Fez (ALIF). The school teaches English to Moroccan students and Arabic to international students, which is where the potentially confusing pair of names comes in.
 
 [ALIF's website](http://www.alif-fes.com) has addresses and contact info, but I'll include it here, too:
 
-* Their phone is (212) 535 62 48 50 from outside Morocco or 05 35 62 48 50 from within. (You replace the 212 country code with a 0 in Moroccan numbers.) 
+* Their phone is (212) 535624850 from outside Morocco or 0535624850 from within. (You replace the 212 country code with a 0 in Moroccan numbers.) 
 * Their address is 2 Rue Ahmed Hiba, Fes, Ville Nouvelle 30000 Morocco. 
 
 I'll provide accomodations information for our travel to Marrakech and the desert when it's finalized. Write these numbers down and keep them on you in case you need to show a taxi or your phone battery dies!
