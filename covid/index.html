@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>COVID-19 statistics by US state - Witulski</title>
+<style> /* set the CSS */
+
+body { font: 12px Arial;}
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: lightgrey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.legend {
+  font-size: 16px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+</style>
+<body>
+
+
+<h1>COVID-19 statistics by US states since their 100th reported case</h1>
+<h2>Click state names to show their graphs</h2>
+<p>Developed by Christopher Witulski, last updated on April 1st</p>
+
+
+<!-- load the d3.js library -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+
+// Set the dimensions of the canvas / graph
+var margin = {top: 30, right: 20, bottom: 320, left: 50},
+    width = 600 - margin.left - margin.right,
+    height = 620 - margin.top - margin.bottom;
+
+// Set the ranges
+// Change Y to scale.linear() for linear scale
+var x = d3.scale.linear().range([0, width]);
+var y = d3.scale.log().range([height, 0]);
+
+// Define the axes
+var xAxis = d3.svg.axis()
+  .scale(x)
+  .orient("bottom")
+  .ticks(5);
+
+var yAxis = d3.svg.axis()
+	.scale(y)
+	.orient("left")
+  .tickSize(-width, 0, 0)
+	.tickFormat(function(d) {return y.tickFormat(5,d3.format(",d"))(d)})
+	.ticks(5);
+
+// Define the line
+var dataline = d3.svg.line()
+    .x(function(d,i) { return x(i); })
+    .y(function(d) { return y(d); });
+
+// Adds the svg canvas
+var svg = d3.select("body")
+    .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+        .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+
+// Get the data
+d3.csv("formattedCovidCases.csv")
+	.row(function(d) {
+		var cases = Object.keys(d).map(function(key) {
+			if (!isNaN(d[key])) {
+				return d[key];
+			}
+		})
+		return {state: d.state, cases: cases };
+	})
+	.get(function(error, data) {
+
+		// Scale the range of the data
+		x.domain([0, data[0].cases.length]);
+		y.domain([100, 100000]);
+
+	  // Nest the entries by symbol
+		var dataNest = d3.nest()
+			.key(function(d) {
+				return d.state;
+			})
+			.entries(data);
+
+		var color = d3.scale.category20();  // set the color scale
+
+		// Loop through each symbol / key
+		dataNest.forEach(function(d, i) {
+
+      // sending just the list of numbers to the line()
+			svg.append("path")
+				.attr("class", "line")
+				.style("stroke", function() {
+					return d.color = color(d.key);
+				})
+        .attr("id", 'tag'+d.key.replace(/\s+/g, ''))
+        .style('opacity', 0.1)
+		    .attr("d", dataline(d.values[0].cases));
+
+      // Make space for the legend
+      // calculate individually based on i to place instead of working through this
+      legendWidthSpacing = width/4
+      d.active = false
+
+      // Build legend
+      svg.append("text")
+        .attr("x", (legendWidthSpacing/2) + (i%4)*legendWidthSpacing)
+        .attr("y", height + 40 + (Math.floor(i/4) * 20))
+        .attr("class", "legend")
+        .style("fill", function() {return d.color = color(d.key); })
+        .on("click", function () {
+          var newOpacity = d.active ? 0.1 : 1;
+          var newStrokeWidth = d.active ? 2 : 4;
+          d3.select("#tag"+d.key.replace(/\s+/g, ''))
+            .transition().duration(200)
+            .style('opacity', newOpacity)
+            .style('stroke-width', newStrokeWidth);
+          d.active = !d.active
+        })
+        .text(d.key);
+		});
+
+		// Add the X Axis
+	  svg.append("g")
+	    .attr("class", "x axis")
+	    .attr("transform", "translate(0," + height + ")")
+	    .call(xAxis);
+
+	  // Add the Y Axis
+	  svg.append("g")
+	    .attr("class", "y axis")
+	    .call(yAxis)
+	});
+
+</script>
+
+<p>
+  This chart tracks cases of COVID-19 across the USA from the date when each state first had at least 100 reported cases. The data comes from the New York Times (see <a href = 'https://www.nytimes.com/article/coronavirus-county-data-us.html?action=click&module=Spotlight&pgtype=Homepage'>here for more information</a> and <a href = 'https://github.com/nytimes/covid-19-data'>here for the GitHub data</a>). The idea for the chart comes from <a href = "https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case">this similar one from Our World in Data</a>.
+</p>
+<p>
+  I wouldn't depend on this for much, it's mostly a chance for me to see a graph that I wish were easier to find while checking to see if I remember how to use D3.js.
+</p>
+
+</body>
