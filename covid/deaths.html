@@ -34,8 +34,8 @@ path {
 <body>
 
 
-<h1>COVID-19 statistics by US states since their 100th reported case</h1>
-<h2>Click state names to show their graphs | <a href="deaths.html">See deaths</a></h2>
+<h1>COVID-19 statistics by US states since their 10th reported death</h1>
+<h2>Click state names to show their graphs | <a href="index.html">See cases</a></h2>
 <p>Developed by Christopher Witulski, last updated on April 3rd</p>
 
 
@@ -82,7 +82,7 @@ var svg = d3.select("body")
               "translate(" + margin.left + "," + margin.top + ")");
 
 // Get the data
-d3.csv("formattedCovidCases.csv")
+d3.csv("formattedCovidDeaths.csv")
 	.row(function(d) {
 		var cases = Object.keys(d).map(function(key) {
 			if (!isNaN(d[key])) {
@@ -95,7 +95,7 @@ d3.csv("formattedCovidCases.csv")
 
 		// Scale the range of the data
 		x.domain([0, data[0].cases.length]);
-		y.domain([100, 100000]);
+		y.domain([10, 10000]);
 
 	  // Nest the entries by symbol
 		var dataNest = d3.nest()
@@ -157,14 +157,13 @@ d3.csv("formattedCovidCases.csv")
       .attr('x', 10)
       .attr('y', -10)
       .attr('class', 'title')
-      .text('Cases, from 100th reported')
-
+      .text('Deaths, from 10th reported')
 	});
 
 </script>
 
 <p>
-  This chart tracks cases of COVID-19 across the USA from the date when each state first had at least 100 reported cases. The data comes from the New York Times (see <a href = 'https://www.nytimes.com/article/coronavirus-county-data-us.html?action=click&module=Spotlight&pgtype=Homepage'>here for more information</a> and <a href = 'https://github.com/nytimes/covid-19-data'>here for the GitHub data</a>). The idea for the chart comes from <a href = "https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case">this similar one from Our World in Data</a>.
+  This chart tracks deaths from COVID-19 across the USA from the date when each state first had at least 10 reported. The data comes from the New York Times (see <a href = 'https://www.nytimes.com/article/coronavirus-county-data-us.html?action=click&module=Spotlight&pgtype=Homepage'>here for more information</a> and <a href = 'https://github.com/nytimes/covid-19-data'>here for the GitHub data</a>). The idea for the chart comes from <a href = "https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case">this similar one from Our World in Data</a>.
 </p>
 <p>
   I wouldn't depend on this for much, it's mostly a chance for me to see a graph that I wish were easier to find while checking to see if I remember how to use D3.js.
