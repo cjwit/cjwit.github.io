@@ -132,16 +132,20 @@ d3.csv("formattedCovidCases.csv")
         .attr("class", "legend")
         .style("fill", function() {return d.color = color(d.key); })
         .on("mouseover", function() {
-          d3.select("#tag"+d.key.replace(/\s+/g, ''))
-            .transition().duration(200)
-            .style('opacity', 1)
-            .style('stroke-width', 4);
+          if (!d.active) {
+            d3.select("#tag"+d.key.replace(/\s+/g, ''))
+              .transition().duration(200)
+              .style('opacity', 1)
+              .style('stroke-width', 4);
+            }
         })
         .on("mouseout", function() {
-          d3.select("#tag"+d.key.replace(/\s+/g, ''))
-            .transition().duration(200)
-            .style('opacity', 0.1)
-            .style('stroke-width', 2);
+          if (!d.active) {
+            d3.select("#tag"+d.key.replace(/\s+/g, ''))
+              .transition().duration(200)
+              .style('opacity', 0.1)
+              .style('stroke-width', 2);
+            }
         })
         .on("click", function () {
           var newOpacity = d.active ? 0.1 : 1;
