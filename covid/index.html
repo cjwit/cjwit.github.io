@@ -24,6 +24,7 @@ path {
   font-size: 16px;
   font-weight: bold;
   text-anchor: middle;
+  opacity: 0.1;
 }
 
 .title {
@@ -138,13 +139,24 @@ d3.csv("formattedCovidCases.csv")
         .style('opacity', 0.1)
 		    .attr("d", dataline(d.values[0].cases))
         .on("mouseover", function() {
+
+          // color label on mouseover
+          d3.select('#label'+d.key.replace(/\s+/g, ''))
+            .transition().duration(200)
+            .style("opacity", 1)
+
+          // color line on mouseover
           d3.select("#tag"+d.key.replace(/\s+/g, ''))
             .transition().duration(200)
             .style("opacity", 1)
             .style('stroke-width', 4);
+
         })
         .on("mouseout", function() {
           if (!d.active) {
+            d3.select('#label'+d.key.replace(/\s+/g, ''))
+              .transition().duration(200)
+              .style("opacity", .1)
             d3.select("#tag"+d.key.replace(/\s+/g, ''))
               .transition().duration(200)
               .style('opacity', 0.1)
@@ -163,6 +175,7 @@ d3.csv("formattedCovidCases.csv")
         .attr("x", (legendWidthSpacing/2) + (i%4)*legendWidthSpacing)
         .attr("y", height + 40 + (Math.floor(i/4) * 20))
         .attr("class", "legend")
+        .attr("id", 'label'+d.key.replace(/\s+/g, ''))
         .style("fill", function() {return d.color = color(d.key); })
         .on("mouseover", function() {
           if (!d.active) {
