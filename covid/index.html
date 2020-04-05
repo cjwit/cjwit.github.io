@@ -31,6 +31,19 @@ path {
   font-weight: bold;
 }
 
+div.statelabel {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
 </style>
 <body>
 
@@ -107,6 +120,11 @@ d3.csv("formattedCovidCases.csv")
 
 		var color = d3.scale.category10();  // set the color scale
 
+    // add state label
+    var statelabel = d3.select("body").append("div")
+      .attr("class", "statelabel")
+      .style("opacity", 0);
+
 		// Loop through each symbol / key
 		dataNest.forEach(function(d, i) {
 
@@ -118,7 +136,22 @@ d3.csv("formattedCovidCases.csv")
 				})
         .attr("id", 'tag'+d.key.replace(/\s+/g, ''))
         .style('opacity', 0.1)
-		    .attr("d", dataline(d.values[0].cases));
+		    .attr("d", dataline(d.values[0].cases))
+        .on("mouseover", function() {
+          d3.select("#tag"+d.key.replace(/\s+/g, ''))
+            .transition().duration(200)
+            .style("opacity", 1)
+            .style('stroke-width', 4);
+        })
+        .on("mouseout", function() {
+          if (!d.active) {
+            d3.select("#tag"+d.key.replace(/\s+/g, ''))
+              .transition().duration(200)
+              .style('opacity', 0.1)
+              .style('stroke-width', 2);
+            }
+        })
+;
 
       // Make space for the legend
       // calculate individually based on i to place instead of working through this
