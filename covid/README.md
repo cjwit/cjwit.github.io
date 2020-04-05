@@ -6,6 +6,5 @@ I wouldn't depend on this for much, it's mostly a chance for me (Christopher Wit
 
 ## Next
 
-* Add hover for data
-* Automate Y scale change from log to linear
+* Focus legend on click
 * Add doubling time lines
