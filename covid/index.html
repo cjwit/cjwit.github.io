@@ -24,25 +24,12 @@ path {
   font-size: 16px;
   font-weight: bold;
   text-anchor: middle;
-  opacity: 0.1;
+  opacity: 0.4;
 }
 
 .title {
   font-size: 16px;
   font-weight: bold;
-}
-
-div.statelabel {
-    position: absolute;
-    text-align: center;
-    width: 60px;
-    height: 28px;
-    padding: 2px;
-    font: 12px sans-serif;
-    background: lightsteelblue;
-    border: 0px;
-    border-radius: 8px;
-    pointer-events: none;
 }
 
 </style>
@@ -51,7 +38,7 @@ div.statelabel {
 
 <h1>COVID-19 statistics by US states since their 100th reported case</h1>
 <h2>Click state names to show their graphs | <a href="deaths.html">See deaths</a></h2>
-<p>Developed by Christopher Witulski, last updated on April 5th</p>
+<p>Developed by Christopher Witulski, last updated on April 8th</p>
 
 
 <!-- load the d3.js library -->
@@ -121,11 +108,6 @@ d3.csv("formattedCovidCases.csv")
 
 		var color = d3.scale.category10();  // set the color scale
 
-    // add state label
-    var statelabel = d3.select("body").append("div")
-      .attr("class", "statelabel")
-      .style("opacity", 0);
-
 		// Loop through each symbol / key
 		dataNest.forEach(function(d, i) {
 
@@ -156,7 +138,7 @@ d3.csv("formattedCovidCases.csv")
           if (!d.active) {
             d3.select('#label'+d.key.replace(/\s+/g, ''))
               .transition().duration(200)
-              .style("opacity", .1)
+              .style("opacity", .4)
             d3.select("#tag"+d.key.replace(/\s+/g, ''))
               .transition().duration(200)
               .style('opacity', 0.1)

@@ -24,6 +24,7 @@ path {
   font-size: 16px;
   font-weight: bold;
   text-anchor: middle;
+  opacity: 0.4;
 }
 
 .title {
@@ -37,7 +38,7 @@ path {
 
 <h1>COVID-19 statistics by US states since their 10th reported death</h1>
 <h2>Click state names to show their graphs | <a href="index.html">See cases</a></h2>
-<p>Developed by Christopher Witulski, last updated on April 5th</p>
+<p>Developed by Christopher Witulski, last updated on April 8th</p>
 
 
 <!-- load the d3.js library -->
@@ -118,7 +119,32 @@ d3.csv("formattedCovidDeaths.csv")
 				})
         .attr("id", 'tag'+d.key.replace(/\s+/g, ''))
         .style('opacity', 0.1)
-		    .attr("d", dataline(d.values[0].cases));
+		    .attr("d", dataline(d.values[0].cases))
+        .on("mouseover", function() {
+
+          // color label on mouseover
+          d3.select('#label'+d.key.replace(/\s+/g, ''))
+            .transition().duration(200)
+            .style("opacity", 1)
+
+          // color line on mouseover
+          d3.select("#tag"+d.key.replace(/\s+/g, ''))
+            .transition().duration(200)
+            .style("opacity", 1)
+            .style('stroke-width', 4);
+
+        })
+        .on("mouseout", function() {
+          if (!d.active) {
+            d3.select('#label'+d.key.replace(/\s+/g, ''))
+              .transition().duration(200)
+              .style("opacity", .4)
+            d3.select("#tag"+d.key.replace(/\s+/g, ''))
+              .transition().duration(200)
+              .style('opacity', 0.1)
+              .style('stroke-width', 2);
+            }
+        });
 
       // Make space for the legend
       // calculate individually based on i to place instead of working through this
@@ -130,6 +156,7 @@ d3.csv("formattedCovidDeaths.csv")
         .attr("x", (legendWidthSpacing/2) + (i%4)*legendWidthSpacing)
         .attr("y", height + 40 + (Math.floor(i/4) * 20))
         .attr("class", "legend")
+        .attr("id", 'label'+d.key.replace(/\s+/g, ''))
         .style("fill", function() {return d.color = color(d.key); })
         .on("mouseover", function() {
           if (!d.active) {
