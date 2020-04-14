@@ -32,13 +32,25 @@ path {
   font-weight: bold;
 }
 
+.tooltip {
+  line-height: 1;
+  padding: 12px;
+  background: lightBlue;
+  color: black;
+  position: absolute;
+  text-align: left;
+  font: 14px sans-serif;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+}
+
 </style>
 <body>
 
 
 <h1>COVID-19 statistics by US states since their 100th reported case</h1>
 <h2>Click state names to show their graphs | <a href="deaths.html">See deaths</a></h2>
-<p>Developed by Christopher Witulski, last updated on April 13th</p>
+<p>Developed by Christopher Witulski, last updated on April 14th</p>
 
 
 <!-- load the d3.js library -->
@@ -82,6 +94,11 @@ var svg = d3.select("body")
     .append("g")
         .attr("transform",
               "translate(" + margin.left + "," + margin.top + ")");
+
+var tooltip = d3.select("body")
+    .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 
 // Get the data
 d3.csv("formattedCovidCases.csv")
@@ -133,8 +150,30 @@ d3.csv("formattedCovidCases.csv")
             .style("opacity", 1)
             .style('stroke-width', 4);
 
+          // build tooltip
+          // console.log('in path', d.key, d.values[0].cases)
+          tooltip.transition()
+            .duration(100)
+            .style("opacity", .9);
+
+          tooltip.html(function() {
+            var casesArray = d.values[0].cases;
+            var lastcase = 0;
+            for (i = 0; i < casesArray.length; i++) {
+              if (Number(casesArray[i]) > lastcase) {
+                lastcase = Number(casesArray[i])
+              }
+            }
+            return d.key + ": " + lastcase;
+          })
+            .style('left', (d3.event.pageX + 10) + 'px')
+            .style('top', (d3.event.pageY - 50) + "px");
         })
         .on("mouseout", function() {
+          tooltip.transition()
+            .duration(100)
+            .style("opacity", 0);
+
           if (!d.active) {
             d3.select('#label'+d.key.replace(/\s+/g, ''))
               .transition().duration(200)
