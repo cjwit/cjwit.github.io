@@ -35,13 +35,12 @@ path {
 .tooltip {
   line-height: 1;
   padding: 12px;
-  background: lightBlue;
-  color: black;
+  background: grey;
+  color: white;
   position: absolute;
   text-align: left;
   font: 14px sans-serif;
-  border-radius: 10px;
-  border-bottom-left-radius: 0px;
+  font-weight: bold;
 }
 
 </style>
@@ -114,7 +113,7 @@ d3.csv("formattedCovidCases.csv")
 
 		// Scale the range of the data
 		x.domain([0, data[0].cases.length]);
-		y.domain([100, 100000]);
+		y.domain([100, 1000000]);
 
 	  // Nest the entries by symbol
 		var dataNest = d3.nest()

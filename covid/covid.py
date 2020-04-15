@@ -21,6 +21,7 @@ def addDeaths(row):
     if deaths > 9:
         covid_deaths[state].append(deaths)
 
+# Something here is not working to create a long enough title row
 def createTitleRow(data):
     long = 0
     for state in data:
