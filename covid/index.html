@@ -230,8 +230,11 @@ d3.csv("formattedCovidCases.csv")
             }
         })
         .on("click", function () {
-          var newOpacity = d.active ? 0.1 : 1;
+          var newOpacity = d.active ? 0.4 : 1;
           var newStrokeWidth = d.active ? 2 : 4;
+          d3.select("#label"+d.key.replace(/\s+/g, ''))
+            .transition().duration(200)
+            .style('opacity', newOpacity);
           d3.select("#tag"+d.key.replace(/\s+/g, ''))
             .transition().duration(200)
             .style('opacity', newOpacity)
