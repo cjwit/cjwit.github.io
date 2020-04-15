@@ -6,5 +6,6 @@ I wouldn't depend on this for much, it's mostly a chance for me (Christopher Wit
 
 ## Next
 
-* Focus legend on click
+* Fix issue in python code that creates the wrong length title line 
+* Check for hover issues
 * Add doubling time lines
