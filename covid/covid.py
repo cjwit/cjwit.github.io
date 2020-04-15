@@ -24,9 +24,9 @@ def addDeaths(row):
 # Something here is not working to create a long enough title row
 def createTitleRow(data):
     long = 0
-    for state in data:
-        if len(state) > long:
-            long = len(state)
+    for state in sortData(data):
+        if len(data[state]) > long:
+            long = len(data[state])
     return(["state"] + range(0,long))
 
 def sortData(data):
