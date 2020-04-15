@@ -32,13 +32,24 @@ path {
   font-weight: bold;
 }
 
+.tooltip {
+  line-height: 1;
+  padding: 12px;
+  background: grey;
+  color: white;
+  position: absolute;
+  text-align: left;
+  font: 14px sans-serif;
+  font-weight: bold;
+}
+
 </style>
 <body>
 
 
 <h1>COVID-19 statistics by US states since their 10th reported death</h1>
 <h2>Click state names to show their graphs | <a href="index.html">See cases</a></h2>
-<p>Developed by Christopher Witulski, last updated on April 14th</p>
+<p>Developed by Christopher Witulski, last updated on April 15th</p>
 
 
 <!-- load the d3.js library -->
@@ -47,9 +58,9 @@ path {
 <script>
 
 // Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 20, bottom: 320, left: 50},
+var margin = {top: 30, right: 20, bottom: 320, left: 70},
     width = 600 - margin.left - margin.right,
-    height = 620 - margin.top - margin.bottom;
+    height = 800 - margin.top - margin.bottom;
 
 // Set the ranges
 // Change Y to scale.linear() for linear scale
@@ -83,6 +94,12 @@ var svg = d3.select("body")
         .attr("transform",
               "translate(" + margin.left + "," + margin.top + ")");
 
+var tooltip = d3.select("body")
+    .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
+
 // Get the data
 d3.csv("formattedCovidDeaths.csv")
 	.row(function(d) {
@@ -97,7 +114,7 @@ d3.csv("formattedCovidDeaths.csv")
 
 		// Scale the range of the data
 		x.domain([0, data[0].cases.length]);
-		y.domain([10, 10000]);
+		y.domain([10, 100000]);
 
 	  // Nest the entries by symbol
 		var dataNest = d3.nest()
@@ -105,6 +122,23 @@ d3.csv("formattedCovidDeaths.csv")
 				return d.state;
 			})
 			.entries(data);
+
+    // Add the X Axis
+	  svg.append("g")
+	    .attr("class", "x axis")
+	    .attr("transform", "translate(0," + height + ")")
+	    .call(xAxis);
+
+	  // Add the Y Axis
+	  svg.append("g")
+	    .attr("class", "y axis")
+	    .call(yAxis)
+
+    svg.append('text')
+      .attr('x', 10)
+      .attr('y', -10)
+      .attr('class', 'title')
+      .text('Deaths, from 10th reported')
 
 		var color = d3.scale.category10();  // set the color scale
 
@@ -118,7 +152,7 @@ d3.csv("formattedCovidDeaths.csv")
 					return d.color = color(d.key);
 				})
         .attr("id", 'tag'+d.key.replace(/\s+/g, ''))
-        .style('opacity', 0.1)
+        .style('opacity', 0.4)
 		    .attr("d", dataline(d.values[0].cases))
         .on("mouseover", function() {
 
@@ -131,10 +165,33 @@ d3.csv("formattedCovidDeaths.csv")
           d3.select("#tag"+d.key.replace(/\s+/g, ''))
             .transition().duration(200)
             .style("opacity", 1)
-            .style('stroke-width', 4);
+            .style('stroke-width', 8);
+
+          // build tooltip
+          // console.log('in path', d.key, d.values[0].cases)
+          tooltip.transition()
+            .duration(100)
+            .style("opacity", .9);
+
+          tooltip.html(function() {
+            var casesArray = d.values[0].cases;
+            var lastcase = 0;
+            for (i = 0; i < casesArray.length; i++) {
+              if (Number(casesArray[i]) > lastcase) {
+                lastcase = Number(casesArray[i])
+              }
+            }
+            return d.key + ": " + lastcase + " total deaths";
+          })
+            .style('left', (d3.event.pageX - 50) + 'px')
+            .style('top', (d3.event.pageY - 80) + "px");
 
         })
         .on("mouseout", function() {
+          tooltip.transition()
+            .duration(100)
+            .style("opacity", 0);
+
           if (!d.active) {
             d3.select('#label'+d.key.replace(/\s+/g, ''))
               .transition().duration(200)
@@ -186,22 +243,6 @@ d3.csv("formattedCovidDeaths.csv")
         .text(d.key);
 		});
 
-		// Add the X Axis
-	  svg.append("g")
-	    .attr("class", "x axis")
-	    .attr("transform", "translate(0," + height + ")")
-	    .call(xAxis);
-
-	  // Add the Y Axis
-	  svg.append("g")
-	    .attr("class", "y axis")
-	    .call(yAxis)
-
-    svg.append('text')
-      .attr('x', 10)
-      .attr('y', -10)
-      .attr('class', 'title')
-      .text('Deaths, from 10th reported')
 	});
 
 </script>
