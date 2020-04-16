@@ -9,6 +9,11 @@ body {
   padding: 50px 5%;
 }
 
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
 path {
     stroke: steelblue;
     stroke-width: 2;
@@ -61,8 +66,8 @@ path {
 <script>
 
 // Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 0, bottom: 320, left: 100},
-    width = 650 - margin.left - margin.right,
+var margin = {top: 30, right: 100, bottom: 320, left: 100},
+    width = 800 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
 // Set the ranges
