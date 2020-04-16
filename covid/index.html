@@ -4,7 +4,10 @@
 <title>COVID-19 statistics by US state - Witulski</title>
 <style> /* set the CSS */
 
-body { font: 12px Arial;}
+body {
+  font-family: Arial;
+  padding: 50px 5%;
+}
 
 path {
     stroke: steelblue;
@@ -46,10 +49,10 @@ path {
 </style>
 <body>
 
-
-<h1>COVID-19 statistics by US states since their 100th reported case</h1>
-<h2>Click state names to show their graphs | <a href="deaths.html">See deaths</a></h2>
-<p>Developed by Christopher Witulski, last updated on April 15th</p>
+<center>
+  <h1>COVID-19 statistics by US states since their 100th reported case</h1>
+  <p><a href="deaths.html">See deaths</a> | Click state names to show their graphs | Developed by <a href="http://cjwit.github.io">Christopher Witulski</a> | Last updated on April 15th</p>
+</center>
 
 
 <!-- load the d3.js library -->
@@ -58,8 +61,8 @@ path {
 <script>
 
 // Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 20, bottom: 320, left: 70},
-    width = 600 - margin.left - margin.right,
+var margin = {top: 30, right: 0, bottom: 320, left: 100},
+    width = 650 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
 // Set the ranges
@@ -208,8 +211,8 @@ d3.csv("formattedCovidCases.csv")
 
       // Build legend
       svg.append("text")
-        .attr("x", (legendWidthSpacing/2) + (i%4)*legendWidthSpacing)
-        .attr("y", height + 40 + (Math.floor(i/4) * 20))
+        .attr("x", (legendWidthSpacing/2 + Math.floor(i/14) * legendWidthSpacing))
+        .attr("y", height + 40 + (i%14 * 20))
         .attr("class", "legend")
         .attr("id", 'label'+d.key.replace(/\s+/g, ''))
         .style("fill", function() {return d.color = color(d.key); })
