@@ -56,7 +56,7 @@ path {
 
 <center>
   <h1>COVID-19 statistics by US states since their 10th reported death</h1>
-  <p><a href="index.html">See cases</a> | Click state names to show their graphs | Developed by <a href="http://cjwit.github.io">Christopher Witulski</a> | Last updated on June 7th</p>
+  <p><a href="index.html">See cases</a> | Click state names to show their graphs | Developed by <a href="http://cjwit.github.io">Christopher Witulski</a> | Last updated on <span id="date"></span></p>
 </center>
 
 
@@ -64,6 +64,11 @@ path {
 <script src="src/d3.min.js"></script>
 
 <script>
+
+// set last modified date
+var modifiedDate = new Date(document.lastModified);
+var dateSpan = document.getElementById("date");
+dateSpan.innerText = modifiedDate.toDateString();
 
 // Set the dimensions of the canvas / graph
 var margin = {top: 30, right: 100, bottom: 320, left: 100},

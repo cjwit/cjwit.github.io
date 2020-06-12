@@ -34,6 +34,7 @@ def sortData(data):
 
 with open('covid.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
+    next(readCSV)
     for row in readCSV:
         checkState(row[1])
         addCases(row)
