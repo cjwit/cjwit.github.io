@@ -1,4 +1,5 @@
 import csv
+import re
 from datetime import date
 
 covid_cases = {}
@@ -59,10 +60,12 @@ with open('formattedCovidDeaths.csv', 'w') as newfile:
 # set date in both files
 today = date.today()
 todayString = today.strftime("%B %d, %Y")
+searchTerm = "<span id=\"date\">.*<\/span>"
+newDateString = "<span id=\"date\">" + todayString + "</span>"
 
 casesFile = open("index.html", "rt")
 casesFileContents = casesFile.read()
-casesFileContents = casesFileContents.replace("{{DATE}}", todayString)
+casesFileContents = re.sub(searchTerm, newDateString, casesFileContents)
 casesFile.close()
 
 casesFile = open("index.html", "wt")
@@ -71,7 +74,7 @@ casesFile.close()
 
 deathsFile = open("deaths.html", "rt")
 deathsFileContents = deathsFile.read()
-deathsFileContents = deathsFileContents.replace("{{DATE}}", todayString)
+deathsFileContents = re.sub(searchTerm, newDateString, deathsFileContents)
 deathsFile.close()
 
 deathsFile = open("deaths.html", "wt")
