@@ -1,5 +1,5 @@
 import csv
-from datetime import datetime
+from datetime import date
 
 covid_cases = {}
 covid_deaths = {}
@@ -55,3 +55,25 @@ with open('formattedCovidDeaths.csv', 'w') as newfile:
         if len(covid_deaths[state]) > 0:
             newrow = [state] + covid_deaths[state]
             writer.writerow(newrow)
+
+# set date in both files
+today = date.today()
+todayString = today.strftime("%B %d, %Y")
+
+casesFile = open("index.html", "rt")
+casesFileContents = casesFile.read()
+casesFileContents = casesFileContents.replace("{{DATE}}", todayString)
+casesFile.close()
+
+casesFile = open("index.html", "wt")
+casesFile.write(casesFileContents)
+casesFile.close()
+
+deathsFile = open("deaths.html", "rt")
+deathsFileContents = deathsFile.read()
+deathsFileContents = deathsFileContents.replace("{{DATE}}", todayString)
+deathsFile.close()
+
+deathsFile = open("deaths.html", "wt")
+deathsFile.write(deathsFileContents)
+deathsFile.close()
