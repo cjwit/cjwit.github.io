@@ -33,8 +33,8 @@ def addAverages(row):
     all_cases[state].append(total_cases)
     average_new = 0
     number_of_days = len(all_cases[state])
-    print()
-    print (state, "days:", number_of_days)
+    #print()
+    #print (state, "days:", number_of_days)
     if number_of_days == 0:
         covid_averages[state].append(total_cases)
         #print ("in 0 days, appended", total_cases, "to", state, covid_averages[state])
@@ -46,7 +46,7 @@ def addAverages(row):
         average_new = (total_cases - all_cases[state][number_of_days - 7]) / 7.0
         #print ("in over 7 for", state, "day:", day, " cases:", total_cases)
     covid_averages[state].append(average_new)
-    print (state, covid_averages[state], len(covid_averages[state]))
+    #print (state, covid_averages[state], len(covid_averages[state]))
 
 def createTitleRow(data):
     long = 0
@@ -87,15 +87,29 @@ with open('formattedCovidAverages.csv', 'w') as newfile:
     writer = csv.writer(newfile)
     writer.writerow(createTitleRow(covid_averages))
     for state in sortData(covid_averages):
-        if len(covid_averages[state]) > 0:
-            newrow = [state] + covid_averages[state]
-            writer.writerow(newrow)
+        gap = len(all_cases["Washington"]) - len(covid_averages[state])
+        print (state, len(covid_averages[state]), len(all_cases["Washington"]), gap)
+        if gap > 0:
+            zeros = [0] * gap
+            covid_averages[state] = zeros + covid_averages[state]
+        #print (state, len(covid_averages[state]), covid_averages[state])
+        newrow = [state] + covid_averages[state]
+        writer.writerow(newrow)
 
 # set date in both files
 today = date.today()
 todayString = today.strftime("%B %d, %Y")
 searchTerm = "<span id=\"date\">.*<\/span>"
 newDateString = "<span id=\"date\">" + todayString + "</span>"
+
+averagesFile = open("averages.html", "rt")
+averagesFileContents = averagesFile.read()
+averagesFileContents = re.sub(searchTerm, newDateString, averagesFileContents)
+averagesFile.close()
+
+averagesFile = open("averages.html", "wt")
+averagesFile.write(averagesFileContents)
+averagesFile.close()
 
 casesFile = open("index.html", "rt")
 casesFileContents = casesFile.read()
