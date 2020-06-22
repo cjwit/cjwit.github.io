@@ -55,8 +55,8 @@ path {
 <body>
 
 <center>
-  <h1>COVID-19 seven day averages of new cases by US states scaled by population</h1>
-  <p><a href="index.html">See cases</a> | <a href="deaths.html">See deaths</a></p>
+  <h1>COVID-19 seven day averages of new cases by US states scaled by population (per 100,000 people)</h1>
+  <p><a href="index.html">See cases</a> | <a href="deaths.html">See deaths</a> | <a href="averages.html">See seven day averages</a></p>
   <p>Click state names to show their graphs | Developed by <a href="http://cjwit.github.io">Christopher Witulski</a> | Last updated on <span id="date">June 21, 2020</span></p>
 </center>
 
@@ -156,7 +156,7 @@ d3.csv("formattedCovidScaledAverages.csv")
       .attr('x', 10)
       .attr('y', -10)
       .attr('class', 'title')
-      .text('Seven day rolling average. scaled by population')
+      .text('Seven day rolling average per 100,000 people')
 
 		var color = d3.scale.category10();  // set the color scale
 
@@ -199,7 +199,7 @@ d3.csv("formattedCovidScaledAverages.csv")
                 lastcase = Number(casesArray[i])
               }
             }
-            return d.key + ", current seven day scaled average: " + Math.round(lastcase);
+            return d.key + ", current seven day average per 100,000 people: " + Math.round(lastcase);
           })
             .style('left', (d3.event.pageX - 50) + 'px')
             .style('top', (d3.event.pageY - 80) + "px");
@@ -268,7 +268,7 @@ d3.csv("formattedCovidScaledAverages.csv")
 </script>
 
 <p>
-  This chart tracks the seven day average of cases of COVID-19 across the USA scaled by state population. The data comes from the New York Times (see <a href = 'https://www.nytimes.com/article/coronavirus-county-data-us.html?action=click&module=Spotlight&pgtype=Homepage'>here for more information</a> and <a href = 'https://github.com/nytimes/covid-19-data'>here for the GitHub data</a>). The idea for the chart comes from <a href = "https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case">this similar one from Our World in Data</a>.
+  This chart tracks the seven day average of cases of COVID-19 across the USA scaled by state population (per 100,000 people). The data comes from the New York Times (see <a href = 'https://www.nytimes.com/article/coronavirus-county-data-us.html?action=click&module=Spotlight&pgtype=Homepage'>here for more information</a> and <a href = 'https://github.com/nytimes/covid-19-data'>here for the GitHub data</a>). The idea for the chart comes from <a href = "https://ourworldindata.org/grapher/covid-confirmed-cases-since-100th-case">this similar one from Our World in Data</a>.
 </p>
 <p>
   I wouldn't depend on this for much, it's mostly a chance for me to see a graph that I wish were easier to find while checking to see if I remember how to use D3.js.
