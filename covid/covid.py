@@ -1,17 +1,21 @@
 import csv
+import json
 import re
 from datetime import date
 
 covid_cases = {}
 covid_deaths = {}
 covid_averages = {}
+covid_scaled_averages = {}
 all_cases = {}
+populations = {}
 
 def checkState(state):
     if state not in covid_cases:
         covid_cases[state] = []
         covid_deaths[state] = []
         covid_averages[state] = []
+        covid_scaled_averages[state] = []
         all_cases[state] = []         # for averages
 
 def addCases(row):
@@ -37,6 +41,7 @@ def addAverages(row):
     #print (state, "days:", number_of_days)
     if number_of_days == 0:
         covid_averages[state].append(total_cases)
+        covid_scaled_averages[state].append(total_cases * 1.0 * 100000 / populations[state])
         #print ("in 0 days, appended", total_cases, "to", state, covid_averages[state])
         return
     elif number_of_days < 7:
@@ -46,6 +51,8 @@ def addAverages(row):
         average_new = (total_cases - all_cases[state][number_of_days - 7]) / 7.0
         #print ("in over 7 for", state, "day:", day, " cases:", total_cases)
     covid_averages[state].append(average_new)
+    covid_scaled_averages[state].append(average_new * 1.0 * 100000 / populations[state])
+
     #print (state, covid_averages[state], len(covid_averages[state]))
 
 def createTitleRow(data):
@@ -57,6 +64,13 @@ def createTitleRow(data):
 
 def sortData(data):
     return sorted(data)
+
+with open('population.json') as populationFile:
+    data = json.load(populationFile)
+    for entry in data:
+        if entry['region'] not in populations:
+            populations[entry['region']] = 0
+        populations[entry['region']] += int(entry['population'])
 
 with open('covid.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
@@ -88,12 +102,25 @@ with open('formattedCovidAverages.csv', 'w') as newfile:
     writer.writerow(createTitleRow(covid_averages))
     for state in sortData(covid_averages):
         gap = len(all_cases["Washington"]) - len(covid_averages[state])
-        print (state, len(covid_averages[state]), len(all_cases["Washington"]), gap)
+        #print (state, len(covid_averages[state]), len(all_cases["Washington"]), gap)
         if gap > 0:
             zeros = [0] * gap
             covid_averages[state] = zeros + covid_averages[state]
         #print (state, len(covid_averages[state]), covid_averages[state])
         newrow = [state] + covid_averages[state]
+        writer.writerow(newrow)
+
+with open('formattedCovidScaledAverages.csv', 'w') as newfile:
+    writer = csv.writer(newfile)
+    writer.writerow(createTitleRow(covid_scaled_averages))
+    for state in sortData(covid_scaled_averages):
+        gap = len(all_cases["Washington"]) - len(covid_scaled_averages[state])
+        #print (state, len(covid_averages[state]), len(all_cases["Washington"]), gap)
+        if gap > 0:
+            zeros = [0] * gap
+            covid_scaled_averages[state] = zeros + covid_scaled_averages[state]
+        #print (state, len(covid_averages[state]), covid_averages[state])
+        newrow = [state] + covid_scaled_averages[state]
         writer.writerow(newrow)
 
 # set date in both files
@@ -110,6 +137,15 @@ averagesFile.close()
 averagesFile = open("averages.html", "wt")
 averagesFile.write(averagesFileContents)
 averagesFile.close()
+
+scaledAveragesFile = open("scaled_averages.html", "rt")
+scaledAveragesFileContents = scaledAveragesFile.read()
+scaledAveragesFileContents = re.sub(searchTerm, newDateString, scaledAveragesFileContents)
+scaledAveragesFile.close()
+
+scaledAveragesFile = open("scaled_averages.html", "wt")
+scaledAveragesFile.write(scaledAveragesFileContents)
+scaledAveragesFile.close()
 
 casesFile = open("index.html", "rt")
 casesFileContents = casesFile.read()
