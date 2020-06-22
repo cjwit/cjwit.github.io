@@ -56,7 +56,8 @@ path {
 
 <center>
   <h1>COVID-19 seven day averages of new cases by US states</h1>
-  <p><a href="deaths.html">See deaths</a> | Click state names to show their graphs | Developed by <a href="http://cjwit.github.io">Christopher Witulski</a> | Last updated on <span id="date">June 21, 2020</span></p>
+  <p><a href="index.html">See cases</a> | <a href="deaths.html">See deaths</a></p>
+  <p>Click state names to show their graphs | Developed by <a href="http://cjwit.github.io">Christopher Witulski</a> | Last updated on <span id="date">June 21, 2020</span></p>
 </center>
 
 <!-- load the d3.js library -->
@@ -119,8 +120,19 @@ d3.csv("formattedCovidAverages.csv")
 	.get(function(error, data) {
 
 		// Scale the range of the data
+        // FIXME: get max value, not registering if statement
 		x.domain([0, data[0].cases.length]);
-		y.domain([0, 10000]);                   // FIXME: get max value
+		y.domain([0, d3.max(data, function(d) { 
+            // var maxCases = 0;
+            // for (var i = 0; i < d.cases.length - 1; i++) {
+            //     if (d.cases[i] > maxCases) {
+            //         maxCases = d.cases[i];
+            //         // console.log(d.state, d.cases[i], maxCases);
+            //     }
+            // }
+            // console.log(maxCases);
+            return 10000; 
+            })]);
 
 	  // Nest the entries by symbol
 		var dataNest = d3.nest()
