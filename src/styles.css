@@ -23,6 +23,7 @@ body {
 
 h2 {
   padding-bottom: 30px;
+  margin-top: 4rem;
   font-weight: 100; }
 
 .selector {
@@ -127,8 +128,6 @@ h4 {
 #contact {
   padding-left: 20px;
   padding-right: 20px; }
-  #contact a {
-    color: #8bb2d1; }
 
 .image-background {
   color: white; }
@@ -139,4 +138,7 @@ h4 {
     .image-background {
       background-attachment: scroll; } }
 
+.image-background a {
+  color: #8bb2d1;
+}
 /*# sourceMappingURL=styles.css.map */
