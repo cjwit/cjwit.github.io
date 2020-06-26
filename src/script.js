@@ -1,6 +1,13 @@
 // TODO: format buttons for development section on mobile
 
-var python = [
+var visualizations = [
+	{
+		name: 'COVID-19 statistics',
+		img: 'images/covid.png',
+		description: "Interactive US State level representations of data related to the COVID-19 outbreak, including logorythmic total cases and deaths statistics and daily outbreaks, both total and scaled to state population",
+		github: "https://github.com/cjwit/covid",
+		link: 'https://cjwit.github.io/covid/'
+	},
 	{
 		name: 'ContourViz: Melodic Contours in Malhun',
 		img: 'images/malhun.png',
@@ -10,7 +17,56 @@ var python = [
 	}
 ]
 
-var d3 = [
+var websites = [
+	{
+		name: 'Worldmusictextbook.org',
+		img: 'images/wmt.png',
+		description: "An open and collaborative world music textbook.",
+		github: "https://github.com/worldmusic/worldmusic.github.io",
+		link: 'https://worldmusictextbook.org'
+	},
+	{
+		name: 'Society for Arab Music Research',
+		img: 'images/samr.png',
+		description: "Jekyll based home page for the Arab music special interest group.",
+		github: "https://github.com/sem-samr/sem-samr.github.io",
+		link: 'https://samr.club'
+	},
+	{
+		name: 'Building a (fretless, tackhead, block rim) banjo',
+		img: 'images/banjo.png',
+		description: "A step by step description of how I build banjos in a responsive and organized single page layout.",
+		github: "https://github.com/cjwit/banjo_build",
+		link: 'https://cjwit.github.io/banjo_build/'
+	}
+]
+
+var javascript = [
+	{
+		name: 'What?',
+		img: 'images/what.png',
+		description: "Javascript-based game that uses sounds and timers to clone the popular Simon©.",
+		github: "https://github.com/cjwit/what/tree/gh-pages",
+		link: 'http://cjwit.github.io/what'
+	},
+	{
+		name: 'Tic Tac Toe',
+		img: 'images/ttt.png',
+		description: "Web-based tic tac toe game devleoped in Javascript.",
+		github: "https://github.com/cjwit/ttt/tree/gh-pages",
+		link: 'http://cjwit.github.io/ttt'
+	},
+	{
+		name: 'Break Time',
+		img: 'images/break.png',
+		description: "Javascript-based pamadoro timer application.",
+		github: "https://github.com/cjwit/break/tree/gh-pages",
+		link: 'http://cjwit.github.io/break'
+	}
+]
+
+/*
+var other_visualizations = [
 	{
 		name: 'Vote!',
 		img: 'images/vote.png',
@@ -45,9 +101,7 @@ var d3 = [
 		description: "A heatmap type chart of global tempertures built in D3.js.",
 		github: "https://github.com/cjwit/globaltemp/tree/gh-pages",
 		link: 'http://cjwit.github.io/globaltemp'
-	}
-
-/*
+	},
 	{
 		name: 'Doping Allegations in Cycling',
 		img: 'images/doping.png',
@@ -62,9 +116,7 @@ var d3 = [
 		github: "https://github.com/cjwit/gdp/tree/gh-pages",
 		link: 'http://cjwit.github.io/gdp'
 	}
-*/
 
-]
 var react = [
 	{
 		name: 'Arab Music Research',
@@ -93,34 +145,31 @@ var react = [
 		description: "A simple online text editor that displays a preview of Github's Markdown format.",
 		github: 'https://github.com/cjwit/markdown/tree/gh-pages',
 		link: 'http://cjwit.github.io/markdown/'
+	},
+	{
+		name: 'Recipe Box',
+		img: 'images/recipes.png',
+		description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
+		github: "https://github.com/cjwit/recipes/tree/gh-pages",
+		link: 'http://cjwit.github.io/recipes'
+	},
+	{
+		name: 'Dungeon Fungeon',
+		img: 'images/dungeon.png',
+		description: "A dungeon-type game built in React.js.",
+		github: "https://github.com/cjwit/fungeon/tree/gh-pages",
+		link: 'http://cjwit.github.io/fungeon'
+	},
+	{
+		name: 'Game of Life',
+		img: 'images/life.png',
+		description: "React.js-based simulation that mirrors the functionality of Conway's Game of Life.",
+		github: "https://github.com/cjwit/life/tree/gh-pages",
+		link: 'http://cjwit.github.io/life'
 	}
 ]
 
-/*
-{
-	name: 'Recipe Box',
-	img: 'images/recipes.png',
-	description: "Recipe box application designed in React.js that uses the browser's local storage to persist saved entries.",
-	github: "https://github.com/cjwit/recipes/tree/gh-pages",
-	link: 'http://cjwit.github.io/recipes'
-},
-{
-	name: 'Dungeon Fungeon',
-	img: 'images/dungeon.png',
-	description: "A dungeon-type game built in React.js.",
-	github: "https://github.com/cjwit/fungeon/tree/gh-pages",
-	link: 'http://cjwit.github.io/fungeon'
-},
-{
-	name: 'Game of Life',
-	img: 'images/life.png',
-	description: "React.js-based simulation that mirrors the functionality of Conway's Game of Life.",
-	github: "https://github.com/cjwit/life/tree/gh-pages",
-	link: 'http://cjwit.github.io/life'
-},
-*/
-
-var bootstrap = [
+var other_websites = [
 	{
 		name: 'Online Course Documentation',
 		img: 'images/docs.png',
@@ -147,40 +196,18 @@ var bootstrap = [
 		description: "Uses Bootstrap and SASS to display portfolio content and other information on the author's research, musical activities, and current web development projects.",
 		github: "https://github.com/cjwit/cjwit.github.io",
 		link: '#musicology'
-	}
-]
-
-/*
-
-{
-	name: 'World Music resources',
-	description: "Website for online materials linked to the World Music: Traditions and Transformations textbook. Uses vanilla JavaScript alongside jQuery and Colorbox to create a dynamic student experience within a static website. Currently under development.",
-	link: 'http://myweb.fsu.edu/cwitulski/textbook/'
-}
-
-*/
-
-var javascript = [
-	{
-		name: 'What?',
-		img: 'images/what.png',
-		description: "Javascript-based game that uses sounds and timers to clone the popular Simon©.",
-		github: "https://github.com/cjwit/what/tree/gh-pages",
-		link: 'http://cjwit.github.io/what'
 	},
 	{
-		name: 'Break Time',
-		img: 'images/break.png',
-		description: "Javascript-based pamadoro timer application.",
-		github: "https://github.com/cjwit/break/tree/gh-pages",
-		link: 'http://cjwit.github.io/break'
+		name: 'World Music resources',
+		description: "Website for online materials linked to the World Music: Traditions and Transformations textbook. Uses vanilla JavaScript alongside jQuery and Colorbox to create a dynamic student experience within a static website. Currently under development.",
+		link: 'http://myweb.fsu.edu/cwitulski/textbook/'
 	},
 	{
-		name: 'Current Weather',
-		img: 'images/weather.png',
-		description: "Weather application that uses geographic coordinates from the browser to find the current weather and near-term forecast for your local area.",
-		github: "https://github.com/cjwit/weather/tree/gh-pages",
-		link: 'http://cjwit.github.io/weather'
+		name: 'Random Quote Generator',
+		img: 'images/quotes.png',
+		description: "API-driven application generates a new quote and allows for sharing via Twitter",
+		github: "https://github.com/cjwit/quotes/tree/gh-pages",
+		link: 'http://cjwit.github.io/quotes'
 	},
 	{
 		name: 'Wikipedia Lookup',
@@ -190,39 +217,26 @@ var javascript = [
 		link: 'http://cjwit.github.io/wiki'
 	},
 	{
-		name: 'Tic Tac Toe',
-		img: 'images/ttt.png',
-		description: "Web-based tic tac toe game devleoped in Javascript.",
-		github: "https://github.com/cjwit/ttt/tree/gh-pages",
-		link: 'http://cjwit.github.io/ttt'
+		name: 'Calculamatator',
+		img: 'images/calc.png',
+		description: "Javascript-based online calculator application.",
+		github: "https://github.com/cjwit/calc/tree/gh-pages",
+		link: 'http://cjwit.github.io/calc'
+	},
+	{
+		name: 'Current Weather',
+		img: 'images/weather.png',
+		description: "Weather application that uses geographic coordinates from the browser to find the current weather and near-term forecast for your local area.",
+		github: "https://github.com/cjwit/weather/tree/gh-pages",
+		link: 'http://cjwit.github.io/weather'
 	}
 ]
-
-/*
-
-{
-	name: 'Random Quote Generator',
-	img: 'images/quotes.png',
-	description: "API-driven application generates a new quote and allows for sharing via Twitter",
-	github: "https://github.com/cjwit/quotes/tree/gh-pages",
-	link: 'http://cjwit.github.io/quotes'
-},
-{
-	name: 'Calculamatator',
-	img: 'images/calc.png',
-	description: "Javascript-based online calculator application.",
-	github: "https://github.com/cjwit/calc/tree/gh-pages",
-	link: 'http://cjwit.github.io/calc'
-}
-
 */
 
-var buttons = ['Test Drive', 'Check It', 'Boom', 'Go There', 'Take a Look', 'Do It Up', 'Try It Out'];
-
-var renderContent = function(category) {
+var renderContent = function (category) {
 	var content = ''
 	var category = eval(category)
-	category.forEach(function(item) {
+	category.forEach(function (item) {
 		html = "<div class='row dev-content'><div class='col-sm-3 col-sm-offset-1'><img src='";
 		html += (item.img ? item.img : 'images/default.jpg');
 		html += "' class='img-rounded img-responsive dev-img'></div><div class='col-sm-7'><h4 class='text-uppercase'>";
@@ -231,9 +245,7 @@ var renderContent = function(category) {
 		html += item.description;
 		html += "</p><p><a href='";
 		html += item.link;
-		html += "' class='btn btn-default' target='_blank' role='button'>"
-		html += buttons[Math.floor(Math.random() * buttons.length)]
-		html += "</a>"
+		html += "' class='btn btn-default' target='_blank' role='button'>Live page</a>"
 		if (item.github) {
 			html += " <a href='" + item.github + "' class='btn btn-default' target='_blank' role='button'>View on GitHub</a>"
 		}
@@ -243,15 +255,15 @@ var renderContent = function(category) {
 	return content;
 }
 
-$(document).ready(function(){
-	$(".nav a").on("click", function(){
+$(document).ready(function () {
+	$(".nav a").on("click", function () {
 		$(".nav").find(".active").removeClass("active");
 		$(this).parent().addClass("active");
 	});
 
-	$('#dev-container').html(renderContent(react))
+	$('#dev-container').html(renderContent(websites))
 
-	$('.selector').click(function(e) {
+	$('.selector').click(function (e) {
 		var category = event.target.id
 		$('.selector').removeClass('active')
 		$(event.target).addClass('active')

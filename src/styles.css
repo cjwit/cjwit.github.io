@@ -116,11 +116,11 @@ h4 {
     width: 80%;
     margin: auto; } }
 
-#music {
-  background-image: url("../images/violin-cover-dark.jpg");
+#publications {
+  background-image: url("../images/pattern1-dark.jpg");
   background-size: cover; }
 
-#links {
+#contact {
   background-image: url("../images/meknes-dark.jpg");
   background-size: cover; }
 
