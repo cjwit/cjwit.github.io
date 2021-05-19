@@ -3,12 +3,13 @@ layout: post
 title:  "Building a banjo (Part 1: intro, tools, and materials)"
 date:   2020-06-29 09:46:19 -0400
 categories: banjo
+description: I've built a handful of these and I'm happy with how they came out. I hope that this can be helpful for anyone who is interested in giving banjo building a try.
 ---
 I prepared this document specifically for two students who are interested in building banjos. If you found your way here, feel free to reach out at [chris.witulski@gmail.com](mailto:chris.witulski@gmail.com) with any questions, comments, or (more likely) suggestions. I've built a handful of these and I'm happy with how they came out. I hope that this can be helpful for anyone who is interested in giving banjo building a try.
 
 This process comes out of many late nights of reading the extraordinarily helpful building and repair forums at [banjohangout.com](https://www.banjohangout.org/gotoforum/12). I also drew heavily on other sites that I link to below. The influence of the folks at the BGSU School of Art wood shop who invited me in and taught me the little bit that I know about woodworking, cannot be overstated!
 
-I'm not someone who comes from a background in woodworking.My first banjo was my first building project. But I like how they have come out so far and am happy to share, in case there are others who are coming from a blank slate as far as cutting wood goes. For what it's worth, here are some photos from two recent builds. The first is cherry and ipe and the second is Ambrosia maple and purpleheart. Click for larger images.
+I'm not someone who comes from a background in woodworking. My first banjo was my first building project. But I like how they have come out so far and am happy to share, in case there are others who are coming from a blank slate as far as cutting wood goes. For what it's worth, here are some photos from two recent builds. The first is cherry and ipe and the second is Ambrosia maple and purpleheart. Click for larger images.
 
 <a href="/images/banjo/cherry_body.jpg">
 <img src="/images/banjo/cherry_body_sm.jpg" class="small" alt="Cherry body">

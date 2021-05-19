@@ -3,6 +3,7 @@ layout: post
 title:  "Building a banjo (Part 2: buying wood)"
 date:   2020-06-29 09:47:19 -0400
 categories: banjo
+description: When I was starting with my first build, choosing wood was one of the most mysterious parts.
 ---
 
 ## Buying wood

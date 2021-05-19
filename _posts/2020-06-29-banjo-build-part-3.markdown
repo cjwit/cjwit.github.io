@@ -3,6 +3,7 @@ layout: post
 title:  "Building a banjo (Part 3: building the rim)"
 date:   2020-06-29 09:48:19 -0400
 categories: banjo
+description: A block rim is basically a stacked set of "laminations." Each of these is an octagon (though you also see 12 or 16 segments).
 ---
 
 ## Building the rim

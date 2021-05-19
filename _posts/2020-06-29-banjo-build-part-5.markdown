@@ -3,6 +3,7 @@ layout: post
 title:  "Building a banjo (Part 5: assembling and finishing)"
 date:   2020-06-29 09:50:19 -0400
 categories: banjo
+description: This is a tricky part of the build, but it's also one of the most satisfying to finish up. Once you're done, you'll have two pieces that fit together and look something like a banjo.
 ---
 ## Assembling the neck and rim
 
