@@ -1,8 +1,3 @@
 *.css.map
 .sass-cache/
-
-
-
-
-
-images-unused/
+_site

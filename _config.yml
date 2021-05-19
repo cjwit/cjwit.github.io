@@ -1,0 +1,34 @@
+# Site settings
+title: Christopher Witulski
+description: Projects, research, writing, and teaching
+url: https://cwitulski.com/home
+
+author:
+  name: Christopher Witulski
+  email: chris.witulski@gmail.com
+  url: https://cwitulski.com
+
+social:
+  email: chris.witulski@gmail.com
+  github: https://github.com/cjwit
+
+# Build settings
+baseurl: "" # the subpath of your site, e.g. /blog
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+# Assets
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Permalinks
+permalink: /:year-:month-:day/:title
+paginate: 5
+
+# Related posts settings
+related_posts_section:
+  max_count: 5
+  min_common_tags: 2
