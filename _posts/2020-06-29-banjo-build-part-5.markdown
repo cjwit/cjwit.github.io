@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a banjo (Part 5: assembling and finishing)"
-date:   2021-05-19 09:50:19 -0400
+date:   2020-06-29 09:50:19 -0400
 categories: banjo
 ---
 ## Assembling the neck and rim
@@ -237,3 +237,5 @@ Once you get both where you want them, you can go back to the sander or sand pap
 Nylgut strings take forever to stretch, so you'll spend a week or so retuning over and over. But as you do, you'll be playing a banjo that you built yourself. Congrats!
 
 If this was helpful, I would love to see what you came up with. Please, don't hesitate to share photos, stories, comments, or suggestions with me [via email](mailto:chris.witulski@gmail.com) or any of the world's standard social media formats. I have links to my other writing and projects at my home page: [cwitulski.com](https://cwitulski.com). Thanks for reading!
+
+## [Back to Part 1]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-1.markdown %})

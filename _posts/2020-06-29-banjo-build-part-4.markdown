@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a banjo (Part 4: building the neck)"
-date:   2021-05-19 09:49:19 -0400
+date:   2020-06-29 09:49:19 -0400
 categories: banjo
 ---
 ## Building the neck
@@ -281,4 +281,4 @@ Then get your next thinnest peg (the next shortest measurement) and pick a hole 
 
 Finally, mark a spot that's a little bit above where the peg emerges from the fingerboard so that you can saw the ends off and sand them down. You want them to be even. This is also a good time to take a small drill bit and put a new hole in for your strings.
 
-## [Back to Part 3]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-3.markdown %}) | [Go to Part 5]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-5.markdown %})
+## [Back to Part 3]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-3.markdown %}) | [Go to Part 5]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-5.markdown %})

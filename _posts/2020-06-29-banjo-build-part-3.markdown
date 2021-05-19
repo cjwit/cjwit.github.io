@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a banjo (Part 3: building the rim)"
-date:   2021-05-19 09:48:19 -0400
+date:   2020-06-29 09:48:19 -0400
 categories: banjo
 ---
 
@@ -109,4 +109,4 @@ I've found it to be pretty quick work on my mounted belt sander. You can hold th
 
 The rim is good for now. We'll come back to it when it's time to cut some holes for the dowel stick, but that's not until after the neck is done.
 
-## [Back to Part 2]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-2.markdown %}) | [Go to Part 4]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-4.markdown %})
+## [Back to Part 2]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-2.markdown %}) | [Go to Part 4]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-4.markdown %})

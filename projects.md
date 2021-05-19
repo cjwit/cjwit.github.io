@@ -48,6 +48,6 @@ permalink: /projects/
 
 ![SAMR thumbnail](/images/banjo.jpg){:class="thumb"} 
 
-**Building a (fretless, tackhead, block rim) banjo \|** A step by step description of how I build banjos. [Link]({% link _posts/2021-05-19-banjo-build-part-1.markdown %}), [GitHub](https://github.com/cjwit/banjo_build)
+**Building a (fretless, tackhead, block rim) banjo \|** A step by step description of how I build banjos. [Link]({% link _posts/2020-06-29-banjo-build-part-1.markdown %}), [GitHub](https://github.com/cjwit/banjo_build)
 
 <div class="spacer"></div>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a banjo (Part 1: intro, tools, and materials)"
-date:   2021-05-19 09:46:19 -0400
+date:   2020-06-29 09:46:19 -0400
 categories: banjo
 ---
 I prepared this document specifically for two students who are interested in building banjos. If you found your way here, feel free to reach out at [chris.witulski@gmail.com](mailto:chris.witulski@gmail.com) with any questions, comments, or (more likely) suggestions. I've built a handful of these and I'm happy with how they came out. I hope that this can be helpful for anyone who is interested in giving banjo building a try.
@@ -105,4 +105,4 @@ I've since learned more about hand tools ([this is a good read](https://lostartp
 <img src="/images/banjo/cherry_neck_back_low_sm.jpg" class="small" alt="Cherry neck">
 </a>
 
-## [Go to Part 2]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-2.markdown %})
+## [Go to Part 2]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-2.markdown %})

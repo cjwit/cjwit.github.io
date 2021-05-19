@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a banjo (Part 2: buying wood)"
-date:   2021-05-19 09:47:19 -0400
+date:   2020-06-29 09:47:19 -0400
 categories: banjo
 ---
 
@@ -93,4 +93,4 @@ Rim | 14' | 2" | 1" | 28
 Neck | 7' | 4" | 1" | 28
 Fingerboard | 2-3' | 4" | 1" | 8-12
 
-## [Back to Part 1]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-1.markdown %}) | [Go to Part 3]({{ site.baseurl }}{% link _posts/2021-05-19-banjo-build-part-3.markdown %})
+## [Back to Part 1]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-1.markdown %}) | [Go to Part 3]({{ site.baseurl }}{% link _posts/2020-06-29-banjo-build-part-3.markdown %})
