@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Why this?"
+date:   2021-05-20 08:40:00 -0400
+tags: 
+ - writing
+ - tech
+description: Some thoughts on writing, blogging, keeping in ouch with future me, and the like.
+---
+Welcome to the new site. It's like the old site, but cleaner. And it has a blog feed. So why blog?
+
+Every once in a while, I come across a piece [like this one on "small b blogging"](https://tomcritchlow.com/2018/02/23/small-b-blogging/) that makes me consider how the academic world values writing, how the internet works, and my own note taking and record keeping. This article happens to be focused on how networks of readers work in a world that's obsessed with scale. As part of a bunch of small networks, I appreciate the sentiment. I also know, from personal experience, that writing helps me think and make connections that I might not realize are there until they end up on a (physical or digital) page.
+
+With that in mind, I changed up my page and created a space for a small, insignificant, and irregular blog. I have two main goals: thinking through writing and keeping notes. In that sense, it's not for everyone else, but if you stumble here and have thoughts, suggestions, questions, or ideas, then let me know. I'd love to hear them.
+
+## Thinking through writing
+
+Academic fields prioritize publishing. At times, it feels like it might be at the expense of writing itself and especially over the kinds of collaborations that result from working outside of norms. This is changing with digital humanities projects and as departments shift incentives, but certain types of publishing still hold prestige over others. The [World Music Textbook](https://worldmusictextbook.org) project is one effort to help lift pedagogical writing through peer review, but it's still difficult to prioritize creating teaching resources in a publish-or-perish world. (I'm grateful for the flexibility to pursue these kinds of things in my own position; things do appear to be opening slowly.)
+
+Both as student and since, I've always been frustrated by the opacity of writing. This, too, is improving as Facebook groups and other communities are growing to fill this gap and demystify the publishing process. It's a shame, though, that these live in Facebook-land, closed to the world, especially for those who choose to avoid social media. The discussions are wonderfully healthy, but locked away from searches and inaccessible to anyone who is not already in a (literal) social network. I don't know how much I'll write about writing and publishing itself, but I hope it's enough to be of some help to someone, somewhere.
+
+## Notes to "future me"
+
+That leads to my main goal: helping myself in the future when I inevitably try to figure out how I did something a few years ago. Most of these posts are likely to be in the weeds descriptions of some technical issue. As I learn more about digital humanities and computational methods, I plan to keep my notes here.
+
+These kinds of "note-taking" blogs, which often get termed "tech blogs," have helped me to learn the idiosyncrasies of many processes and systems over the last few years. So have answers on sites like Stack Overflow that I've bookmarked and visited repeatedly. But you always tweak stuff and make it your own, whether for aesthetic or functional reasons. Or because what you're working on is just different than what the generic answer assumes.
+
+I'll share my solutions for my own sake, but maybe someone else poking around the internet will come across them and find them useful. That'd be great. Let me know, send me an email if they are. Otherwise, I'll keep talking to future me, from here in the internet void.
