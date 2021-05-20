@@ -28,13 +28,13 @@ permalink: /projects/
 
 ![Targets VSCode thumbnail](/images/targets.png){:class="thumb"} 
 
-**Word count targets VSCode extension \|** This VSCode extension searches section markdown headers for word count targets, then displays the current progress. [Link](https://marketplace.visualstudio.com/items?itemName=witulski.section-word-count-targets), [GitHub](https://github.com/cjwit/section-word-count-targets)
+**Word count targets VSCode extension \|** Searches markdown headers for word count targets and displays current progress. [Link](https://marketplace.visualstudio.com/items?itemName=witulski.section-word-count-targets), [GitHub](https://github.com/cjwit/section-word-count-targets)
 
 <div class="spacer"></div>
 
 ![Selection VSCode thumbnail](/images/selection.png){:class="thumb"} 
 
-**Selection word count VSCode extension \|** A simple VSCode extension that calculates and displays the word count of a document and, when there is a selection, the word count of a selection. [Link](https://marketplace.visualstudio.com/items?itemName=witulski.selection-word-count), [GitHub](https://github.com/cjwit/selection-word-count)
+**Selection word count VSCode extension \|** Calculates and displays the word count of a document and any selected text. [Link](https://marketplace.visualstudio.com/items?itemName=witulski.selection-word-count), [GitHub](https://github.com/cjwit/selection-word-count)
 
 <div class="spacer"></div>
 
@@ -46,7 +46,7 @@ permalink: /projects/
 
 ![Malhun thumbnail](/images/malhun.png){:class="thumb"} 
 
-**ContourViz: Melodic Contours in Malhun \|** An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. Read a blog post about the Python package <a href = 'https://music21-mit.blogspot.com/2016/07/contourviz-creating-interactive-contour.html' target = '_blank'>here</a>. [Link](http://cjwit.github.io/music21), [GitHub](https://github.com/cjwit/contourviz)
+**ContourViz: Melodic Contours in Malhun \|** An interactive visualization of melodic transcriptions from a Moroccan musical genre of sung poetry. <a href = 'https://music21-mit.blogspot.com/2016/07/contourviz-creating-interactive-contour.html' target = '_blank'>Blog post at music21</a>, [Link](http://cjwit.github.io/music21), [GitHub](https://github.com/cjwit/contourviz)
 
 <div class="spacer"></div>
 
