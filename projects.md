@@ -26,6 +26,18 @@ permalink: /projects/
 
 ## Computing projects
 
+![Targets VSCode thumbnail](/images/targets.png){:class="thumb"} 
+
+**Word count targets VSCode extension \|** This VSCode extension searches section markdown headers for word count targets, then displays the current progress. [Link](https://marketplace.visualstudio.com/items?itemName=witulski.section-word-count-targets), [GitHub](https://github.com/cjwit/section-word-count-targets)
+
+<div class="spacer"></div>
+
+![Selection VSCode thumbnail](/images/selection.png){:class="thumb"} 
+
+**Selection word count VSCode extension \|** A simple VSCode extension that calculates and displays the word count of a document and, when there is a selection, the word count of a selection. [Link](https://marketplace.visualstudio.com/items?itemName=witulski.selection-word-count), [GitHub](https://github.com/cjwit/selection-word-count)
+
+<div class="spacer"></div>
+
 ![COVID thumbnail](/images/covid.png){:class="thumb"} 
 
 **COVID-19 visualization \|** Interactive US State level representations of data related to the COVID-19 outbreak. [Link](https://cjwit.github.io/covid/), [GitHub](https://github.com/cjwit/covid)
