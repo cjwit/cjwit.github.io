@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Building a banjo (Part 1: intro, tools, and materials)"
+title:  "Building a banjo, part 1: intro, tools, and materials"
 date:   2020-06-29 09:46:19 -0400
-categories: banjo
+tags: banjo
+permalink: banjo_build/
 description: I've built a handful of these and I'm happy with how they came out. I hope that this can be helpful for anyone who is interested in giving banjo building a try.
 ---
 I prepared this document specifically for two students who are interested in building banjos. If you found your way here, feel free to reach out at [chris.witulski@gmail.com](mailto:chris.witulski@gmail.com) with any questions, comments, or (more likely) suggestions. I've built a handful of these and I'm happy with how they came out. I hope that this can be helpful for anyone who is interested in giving banjo building a try.
