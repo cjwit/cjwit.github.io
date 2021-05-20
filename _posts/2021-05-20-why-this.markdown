@@ -5,7 +5,7 @@ date:   2021-05-20 08:40:00 -0400
 tags: 
  - writing
  - tech
-description: Some thoughts on writing, blogging, keeping in ouch with future me, and the like.
+description: Some thoughts on writing, blogging, keeping in touch with future me, and the like.
 ---
 Welcome to the new site. It's like the old site, but cleaner. And it has a blog feed. So why blog?
 
