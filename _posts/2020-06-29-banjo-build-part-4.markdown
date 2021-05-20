@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Building a banjo (Part 4: building the neck)"
+title:  "Building a banjo, part 4: building the neck"
 date:   2020-06-29 09:49:19 -0400
-categories: banjo
+tags: banjo
 description: Time to build a neck. It's hard to do this first because your scale length (the distance from the nut to the bridge) will depend on the final size of your rim.
 ---
 ## Building the neck
