@@ -1,3 +1,10 @@
 *.css.map
 .sass-cache/
 _site
+
+# latex demos
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.xdv
