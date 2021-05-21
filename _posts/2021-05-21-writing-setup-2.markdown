@@ -42,9 +42,5 @@ pandoc draft.md -s -o paper.docx --reference-doc=term-paper-reference-doc.docx -
 
 The last interesting bit of all this is just how much flexibility you get by using Pandoc to convert to PDF. It uses the LaTeX system, which is an entirely different hole that I fell into not long ago for another project. In the next post, I'll introduce that and share some useful commands. Again, mostly so I remember them.
 
-## Useful LaTeX commands
-
-I'll add to this list as I come across things that are helpful for PDF file exports (text boxes for syllabi and things like that).
-
 ## [Go to Part 3]({{ site.baseurl }}{% link _posts/2021-05-21-writing-setup-3.markdown %})
 
