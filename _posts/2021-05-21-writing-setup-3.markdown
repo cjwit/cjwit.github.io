@@ -58,7 +58,7 @@ And some bullets:
 
 For a LaTeX file, this would produce something that looks like this (with whitespace trimmed off):
 
-![latex metadata](/images/latex-meta.jpg)
+![latex metadata](/images/latex-meta.jpg){:class="small"}
 
 ## Customizing the look
 
@@ -74,7 +74,7 @@ Take fonts as a simple example. (There is an option in Pandoc, but I'll do it th
 header-includes: \usepackage{mathpazo}
 ```
 
-![New font](/images/latex-font.jpg)
+![New font](/images/latex-font.jpg){:class="small"}
 
 Fonts can be a pain, especially when doing work with other languages. Getting Arabic to format correctly was hard enough that it inspired me making this site [so that I had a good place to easily find my notes]({% link _posts/2021-05-20-arabic-latex.markdown %}). But setting the PDF engine (the actual program that does the conversion) to `xelatex` when running Pandoc can help since XeLaTeX can use system fonts and doesn't require installing LaTeX-specific packages. To do that, add `--pdf-engine=xelatex` to the command when running Pandoc.
 
@@ -119,10 +119,10 @@ Finally, the last two add an abstract to the document and retitle it "About this
 
 This creates a document that starts out looking like this image.
 
-![Syllabus](/images/latex-syllabus.jpg)
+![Syllabus](/images/latex-syllabus.jpg){:class="small"}
 
 The `fancyhdr` lines automatically create headers on all pages but the first that include a current section title and the document title. It also gives control over page numbers (which show up in the footer here, so not in this image). The table is generated from the normal Markdown syntax and converted/formatted by LaTeX. Again, this image is without the top margin's whitespace.
 
-![Syllabus header](/images/latex-syllabus-header.jpg)
+![Syllabus header](/images/latex-syllabus-header.jpg){:class="small"}
 
 That's about it for now. As I have time, I'll outline some other documents that I've formatted using LaTeX and highlight the packages and features that I have found to be useful. As always, thanks and please reach out with any suggestions, ideas, criticisms, updates, and so on.
