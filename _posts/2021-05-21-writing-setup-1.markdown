@@ -8,7 +8,7 @@ tags:
 description: A broad overview of one way to make writing both way too complex and very simple.
 ---
 
-I prepared this document as a series of notes for my future self, when I forget how I set all this up. If you found your way here, feel free to reach out at [chris.witulski@gmail.com](mailto:chris.witulski@gmail.com) with any questions, comments, or (more likely) suggestions.
+I prepared this document as a series of notes for my future self, when I forget how I set all this up. If you found your way here, feel free to reach out at [chris.witulski@gmail.com](mailto:chris.witulski@gmail.com) with any questions, comments, or (more likely) suggestions. Importantly, this is just an overview. It's not a tutorial, which means that while it may be helpful for getting an idea of how things connect and seeing what has worked well for me, it will not replace the need to read lots of documentation, fight many battles, throw a few things across the room when something doesn't work, and so on.
 
 This is based on a handful of other similar resources from around the internet, but with one main difference. I love [Scrivener](https://www.literatureandlatte.com/scrivener/overview), but I'm also increasingly enjoying plain text editors. The main feature I use in Scrivener (which I used to write two books, so for large projects) is its organizational structure. Specifically, I love the word count targets for individual small sections. They just fit the way I work.
 
